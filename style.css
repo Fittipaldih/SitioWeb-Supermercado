@@ -1,0 +1,14 @@
+.imagen2almacen{
+    max-width: 142px;
+    max-height: 142px;
+}
+.imagen3Frescos{
+    max-width: 142px;
+    max-height: 142px;
+}
+#iframe {
+    margin: 50px 0 30px;
+    border: 0px solid #009266;
+    max-width: 750px;
+    max-height: 285px;
+}
