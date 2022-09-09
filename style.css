@@ -1,3 +1,52 @@
+body{
+    margin: 0;
+}
+
+#Encabezado{
+    display: flex;
+    align-items: center;
+    background-color: #5CC4E0;
+    max-height: 80px;
+    border-bottom: #e9e9e9e9 solid 4px;
+}
+.seccionNavYBuscador{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedorLogo{
+    display: inline-block;
+    width: 8%;
+    text-align: center;
+}
+.logo{
+    display: inline-block;
+    padding: 20px;
+    background-color: #E09D5C;
+    text-decoration: none;
+}
+#buscador{
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+#areaBuscador{
+    width: 100%;
+}
+#Carrito{
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+    
+}
+input{
+    padding: 5px 8px;
+    
+}
+.imagencarrito{
+    height: 50px;
+}
 .imagen2almacen{
     max-width: 142px;
     max-height: 142px;
@@ -11,4 +60,24 @@
     border: 0px solid #009266;
     max-width: 750px;
     max-height: 285px;
+}
+.navBar{
+    background-color: #5CC4E0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.SelNav{
+    font-weight: 550;
+    padding: 15px;
+    text-decoration: none;
+    padding: 10px 0px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    border: #387485 solid 2px;
+}
+nav a:hover{
+    color:black;
+    background-color: #2f859c;
 }
