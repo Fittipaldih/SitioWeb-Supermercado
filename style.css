@@ -297,6 +297,32 @@ nav a:hover {
 }
 .ContenedorCat, .ContenedorProductos, .ContenedorPago{
     display: flex;
+    justify-content: center;   
+}
+.PieDePagina{
+    
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    min-height: 200px;
+    align-items: center;
+}
+#imagenFacebook{
+    max-width: 40px;
+    border-radius: 50%;
     justify-content: center;
     
+}
+.PieDePagina a{
+    text-decoration: none;
+    color: black;
+    
+}
+.PieDePagina h3{
+    display: inline;
+}
+.PieDePagina span{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
