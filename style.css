@@ -225,8 +225,8 @@ background-color: #ddd;
 }
 
 /* Formato que las imagenes esten una al lado de la otra*/
-.ListadoCategorias , .ListadoProductos , .ListadoPago ul{
-    display: flex;  
+.ListadoCategorias , .ListadoProductos , .ListadoPago ul {
+    display: flexbox;  
     align-items: center;
     justify-content: space-between;
 }
@@ -319,4 +319,77 @@ background-color: #ddd;
     border-style: solid;
     border-color: #194550f0;
 
+}
+
+/*CONTACTO*/
+
+.contacto{
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+
+.contacto_form {
+ display: flex;   
+ flex-direction: column;
+ margin: 40px;
+ background-color: whitesmoke;
+ padding: 70px;
+ border-radius: 10px;
+ border: #313030 solid 1px;
+}
+
+.contacto_form h2{
+    font-size: 35px;
+    color: rgb(96, 94, 94);
+}
+
+.nombre{
+    margin: 5px;
+}
+
+.apellido{
+    margin: 5px;
+}
+
+.email{
+    margin: 5px;
+}
+
+.comment{
+    max-width: 340px;
+    width: 340px;
+    max-height: 80px;
+    margin: 5px;
+}
+
+.contacto_datos{
+    margin: 40px;
+    background-color: whitesmoke;
+    padding: 70px;
+    border-radius: 10px;
+    border: #313030 solid 1px;
+}
+
+
+.contacto_datos h2{
+    font-size: 35px;
+    color: rgb(96, 94, 94);
+}
+
+.contacto_datos span{
+    font-size: 18px;
+}
+
+#submit{
+    margin: 10px;
+}
+
+.contacto_mapa{
+    justify-content: space-around;
+}
+#mapa{
+    width: 780px;
+    height: 280px;
 }
