@@ -3,14 +3,19 @@ body {
     background-image: url(img/fondo03.png);
     font-family: Calibri, Arial, Helvetica, sans-serif;
 }
-
+header .content-cabecera{
+    background-color: #5CC4E0;
+    flex-direction: column;
+   
+}
 
 #Encabezado {
     display: flex;
     align-items: center;
-    background-color: #5CC4E0;
+    max-width: 1400px;
+    margin:auto;
     max-height: 80px;
-    border-bottom: #e9e9e9e9 solid 4px;
+  
     
 }
 
@@ -29,7 +34,7 @@ body {
 
 .logo {
     display: inline-block;
-    padding: 20px;
+    padding: 25px;
     background-color: #E09D5C;
     text-decoration: none;
 }
@@ -47,8 +52,8 @@ body {
 #Carrito {
     display: inline-block;
     text-align: center;
-    width: 10%;
-
+    box-shadow: 0.5px 0.5px ;
+    border: solid 0.5px rgb(32, 110, 112);
 }
 
 input {
@@ -94,6 +99,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-top:10px ;
 }
 
@@ -325,4 +331,8 @@ nav a:hover {
     display: flex;
     justify-content: center;
     justify-items: center;
+}
+.content-Banner, .ContenedorCat, .ContenedorProductos,.ContenedorPago{
+    margin: auto;
+    max-width: 1400px;
 }
