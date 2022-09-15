@@ -53,7 +53,6 @@ header .content-cabecera{
     display: inline-block;
     text-align: center;
     box-shadow: 0.5px 0.5px ;
-    border: solid 0.5px rgb(32, 110, 112);
 }
 
 input {
