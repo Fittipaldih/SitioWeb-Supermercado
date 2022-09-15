@@ -272,9 +272,11 @@ background-color: #ddd;
     justify-content: center;   
 }
 .PieDePagina{
-    
     background-color: grey;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(3, 2fr);
     min-height: 200px;
     align-items: center;
