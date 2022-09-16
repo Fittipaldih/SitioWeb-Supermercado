@@ -99,7 +99,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-top:10px ;
 }
 
@@ -176,41 +175,76 @@ nav a:hover {
     max-width: 142px;
     max-height: 142px;
     display: inline-block;
-    box-shadow: 2px 2px 2px 2px #eee;
+    box-shadow: 2px 2px #eee;
     border: 1px solid #eef;
     border-radius: 10px;
-    padding: 2px;
+    transition: all 400ms ease;
+
+}
+.imagenProducto:hover{
+    box-shadow:5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-2%);
 }
 
 
 /*Formato a los textos de las imagenes de categorias y productos*/
-.Categorias a, .Productos a {
+.Categorias a{
     text-decoration: none;
     color: black;
     text-align: center;
     text-shadow: #387485;
     font-size: large;
-    
 }
 
 /* Formato a todo el cajon de Categorias*/
-.Categorias, .Productos, .Pago{
-    display: inline-block;
+.Categorias, .Pago{
+    display: flex;
+    flex-direction: column;
     background-image:url(img/fondo.png);
     padding: 0px 20px 20px;
     border: #e9e9e9e9 solid 2px;
-    margin: 50px;
+    margin: auto;
+    margin-top: 80px;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 2px #ccc;
-    width: 80%;
-    
+    width: 1400px;
 }
+.Producto{
+    display: inline-block;
+    background-image:url(img/fondo.png);
+    margin: 30px;
+    width: 500px;
+    border: solid 3px #ccc;
+    border-radius: 4px;
+}
+.Producto a{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin-left:auto;
+    margin-right: auto;
+}
+.contenedor-del-producto{
+    text-align: center;
+}
+
+.Producto h3{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+}
+.containerProductos{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Formato titulo Categorias*/
-.Categorias h2, .Productos h2, .Pago h2{
+.Categorias h2, .Producto h2, .Pago h2{
     border-start-end-radius: 20px;
     border-start-start-radius: 20px;
     box-shadow: 2px 1px #ccc;
-    font-weight:500 ;
+    font-weight: 500px;
     color: rgb(96, 94, 94);
     text-align: center;
     border-bottom: #009266;
@@ -225,10 +259,11 @@ background-color: #ddd;
 }
 
 /* Formato que las imagenes esten una al lado de la otra*/
-.ListadoCategorias , .ListadoProductos , .ListadoPago ul{
-    display: flex;  
+.ListadoCategorias , .ListadoProductos , .ListadoPago {
+    display: flexbox;  
     align-items: center;
-    justify-content: space-between;
+    
+
 }
 
 /* formato a cada imagen Categoria*/
@@ -236,6 +271,7 @@ background-color: #ddd;
     margin: 10px;
     background-color: #e9e9e9e9;
     box-shadow: 1px 1px 1px 1px #ccc;
+    
 }
 
 /* para poner las letras arriba de cada imagen*/
@@ -265,14 +301,13 @@ background-color: #ddd;
 }
 .ImagenCategorias img:hover, .ContenedorProductos img:hover{
     box-shadow:5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
+    transform: translateY(-2%);
 }
 .ContenedorCat, .ContenedorProductos, .ContenedorPago{
     display: flex;
     justify-content: center;   
 }
 .PieDePagina{
-    
     background-color: grey;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -305,6 +340,7 @@ background-color: #ddd;
 
 }
 .Categorias h3 , .Productos h3{
+        display: inline-block;
         color: #313030;
         text-decoration: none;
         margin: 0px;
