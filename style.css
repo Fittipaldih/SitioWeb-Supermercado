@@ -53,7 +53,6 @@ header .content-cabecera{
     display: inline-block;
     text-align: center;
     box-shadow: 0.5px 0.5px ;
-    border: solid 0.5px rgb(32, 110, 112);
 }
 
 input {
@@ -272,9 +271,11 @@ background-color: #ddd;
     justify-content: center;   
 }
 .PieDePagina{
-    
     background-color: grey;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(3, 2fr);
     min-height: 200px;
     align-items: center;
@@ -387,7 +388,7 @@ background-color: #ddd;
 }
 
 .contacto_mapa{
-    justify-content: space-around;
+    align-items: center;
 }
 #mapa{
     width: 780px;
