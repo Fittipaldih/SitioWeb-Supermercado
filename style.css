@@ -237,6 +237,17 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
 }
+.section-productos-destacados {
+    text-align: center;
+    margin-top: 30px;
+}
+.section-productos-destacados h2{
+    display: inline-block;
+    border: 2px solid #ccc;
+    margin: auto;
+    border-radius: 3px;
+    padding:5px 100px;
+}
 
 /* Formato titulo Categorias*/
 .Categorias h2, .Producto h2, .Pago h2{
