@@ -12,50 +12,62 @@
 <body>
     <header>
         <div class="content-cabecera">
-        <div id="Encabezado">
-            <section class="seccionNavYBuscador">
-                <div class="contenedorLogo">
-                    <a href="#" class="logo">EL LOGO</a>
-                </div>
-                <div id="buscador">
-                    <input type="search" id="areaBuscador" placeholder="Buscador...">
-                </div>
-                <a id="Carrito" href="carrito.html">
-                    <img class="imagencarrito" src="img/carrito.png" alt="carrito">
-                </a>
-            </section>
-        </div>
-        <nav class="navBar">
+            <div id="Encabezado">
+                <section class="seccionNavYBuscador">
+                    <div class="contenedorLogo">
+                        <a href="#" class="logo">EL LOGO</a>
+                    </div>
+                    <div id="buscador">
+                        <input type="search" id="areaBuscador" placeholder="Buscador...">
+                    </div>
+                    <a id="Carrito" href="carrito.html">
+                        <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+                    </a>
+                </section>
+            </div>
+            <nav class="navBar">
 
-            <a class="SelNav" href="index.html">Home
-            </a>
-            <a class="SelNav" href="categorias.html">Categorias
-            </a>
-            <a class="SelNav" href="contacto.html">Contacto
-            </a>
-            <a class="SelNav" href="micuenta.html">Mi cuenta
-            </a>
-        </nav>
-    </div>
+                <a class="SelNav" href="index.html">Home
+                </a>
+                <a class="SelNav" href="categorias.html">Categorias
+                </a>
+                <a class="SelNav" href="contacto.html">Contacto
+                </a>
+                <a class="SelNav" href="micuenta.html">Mi cuenta
+                </a>
+            </nav>
+        </div>
 
     </header>
 
 
     <main>
-        <div class="content-Banner">
-            <section class="Banner">
-                <ul class="slider">
-                    <li id="imagen1"><img src="img/BannerCocaCola.png" alt="CocaCola"></li>
-                    <li id="imagen2"><img src="img/BannerOreoPromo.png" alt="Oreo"></li>
-                    <li id="imagen3"><img src="img/BannerPepsi.png" alt="Pepsi"></li>
-                </ul>
-                <ul class="menuBanner">
-                    <li> <a href="#imagen1">·</a> </li>
-                    <li> <a href="#imagen2">·</a> </li>
-                    <li> <a href="#imagen3">·</a> </li>
-                </ul>
-            </section>
-        </div>
+        <section class="contenedor-banner">
+            <input type="radio" name="imagen-slide" id="1" hidden>
+            <input type="radio" name="imagen-slide" id="2" hidden>
+            <input type="radio" name="imagen-slide" id="3" hidden>
+
+            <article class="slide">
+                <div class="item-slide"><img src="img/BannerCocaCola.png" alt="coca cola"></div>
+                <div class="item-slide"><img src="img/BannerOreoPromo.png" alt="oreo"></div>
+                <div class="item-slide"><img src="img/BannerPepsi.png" alt="pepsi"></div>
+            </article>
+            <article class="pagina">
+                <label for="1" class="item-pagina">
+                    <img src="img/BannerCocaCola.png" alt="coca" class="imagen">
+                </label>
+                <label for="2" class="item-pagina">
+                    <img src="img/BannerOreoPromo.png" alt="oreo" class="imagen">
+                </label>
+                <label for="3" class="item-pagina">
+                    <img src="img/BannerPepsi.png" alt="pepsi" class="imagen">
+                </label>
+            </article>
+
+
+        </section>
+
+
         <div class="ContenedorCat">
             <section class="Categorias">
                 <h2>Categorias Destacadas</h2>
@@ -87,34 +99,34 @@
                 </article>
             </section>
         </div>
-        <section class="section-productos-destacados"> 
+        <section class="section-productos-destacados">
             <h2>Productos Destacados</h2>
             <article class="containerProductos">
                 <div class="Producto">
                     <div class="contenedor-del-producto">
-                    <a href="#">
-                        <div class="contenedor-imagenes-producto"><img src="img/papasLays.png" alt="Lays"
-                                class="imagenProducto"></div>
-                        <h3>Lays Clasicas 145g</h3>
-                    </a>
-                </div>
-                </div>
-                <div class="Producto">
-                   <div class="contenedor-del-producto">
-                    <a href="#">
-                        <div class="contenedor-imagenes-producto"><img src="img/lecheSerenisima.png"
-                                alt="leche serenisima" class="imagenProducto"></div>
-                        <h3>Leche Serenisima 1l</h3>
-                    </a>
+                        <a href="#">
+                            <div class="contenedor-imagenes-producto"><img src="img/papasLays.png" alt="Lays"
+                                    class="imagenProducto"></div>
+                            <h3>Lays Clasicas 145g</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="Producto">
-                   <div class="contenedor-del-producto">
-                    <a href="#">
-                        <div class="contenedor-imagenes-producto"><img src="img/AquariosManzana.png"
-                                alt="AquariosManzana" class="imagenProducto"></div>
-                        <h3>Aquarius Manzana 1,5l</h3>
-                    </a>
+                    <div class="contenedor-del-producto">
+                        <a href="#">
+                            <div class="contenedor-imagenes-producto"><img src="img/lecheSerenisima.png"
+                                    alt="leche serenisima" class="imagenProducto"></div>
+                            <h3>Leche Serenisima 1l</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="Producto">
+                    <div class="contenedor-del-producto">
+                        <a href="#">
+                            <div class="contenedor-imagenes-producto"><img src="img/AquariosManzana.png"
+                                    alt="AquariosManzana" class="imagenProducto"></div>
+                            <h3>Aquarius Manzana 1,5l</h3>
+                        </a>
                     </div>
                 </div>
             </article>
