@@ -216,15 +216,16 @@ input[id="3"]:checked ~ .pagina .item-pagina[for="3"]{
 /* Formato a todo el cajon de Categorias*/
 .Categorias, .Pago{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     background-image:url(img/fondo.png);
-    padding: 0px 20px 20px;
+    padding: 0px 15px 15px;
     border: #e9e9e9e9 solid 2px;
-    margin: auto;
-    margin-top: 80px;
+
     border-radius: 30px;
     box-shadow: 2px 2px 2px 2px #ccc;
-    width: 1400px;
+    max-width: 1400px;
 }
 .Producto{
     display: inline-block;
@@ -272,17 +273,18 @@ input[id="3"]:checked ~ .pagina .item-pagina[for="3"]{
 
 /* Formato titulo Categorias*/
 .Categorias h2, .Producto h2, .Pago h2{
+    display: inline-block;
     border-start-end-radius: 20px;
     border-start-start-radius: 20px;
     box-shadow: 2px 1px #ccc;
-    font-weight: 500px;
+    flex-shrink: 3;
     color: rgb(96, 94, 94);
     text-align: center;
     border-bottom: #009266;
     border: solid 2px #ccc  ;
     background-color: #eee;
     padding: 10px;
-    margin: 10px; 
+    margin: auto;
 }
 
 .Categorias h2:hover, .Productos h2:hover, .Pago h2:hover{
@@ -291,8 +293,8 @@ background-color: #ddd;
 
 /* Formato que las imagenes esten una al lado de la otra*/
 .ListadoCategorias , .ListadoProductos , .ListadoPago {
-    display: flexbox;  
     align-items: center;
+    flex-wrap: wrap;
     
 
 }
@@ -311,7 +313,8 @@ background-color: #ddd;
     margin-left: 10px;
 }
 .ImagenCategorias{
-    max-width: 200px;
+    flex-shrink: 1;
+    max-width: 195px;
     max-height: 180px;
     display: inline-block;
     box-shadow: 0.5px 0.5px #ddf;
@@ -322,7 +325,7 @@ background-color: #ddd;
 
 .ImagenCategorias img, .ContenedorProductos img{
     margin: 0px;
-    width: 200px;
+    width: 195px;
     height: 180px;
     border-radius: 10px;
     justify-content: center;
@@ -336,6 +339,7 @@ background-color: #ddd;
 .ContenedorCat, .ContenedorProductos, .ContenedorPago{
     display: flex;
     justify-content: center;
+    
     
 }
 .PieDePagina{
@@ -370,7 +374,8 @@ background-color: #ddd;
 
 .content-Banner, .ContenedorCat, .ContenedorProductos,.ContenedorPago{
     margin: auto;
-    max-width: 1130px;
+    margin-top: 30px;
+    max-width: 1400px;
 
 }
 .Categorias h3 , .Productos h3{
@@ -385,9 +390,9 @@ background-color: #ddd;
 .Categorias h3:hover, .Productos h3:hover{
     background-color: #194550b8;
     color: whitesmoke;
-    border-radius: 50px;
-    border-style: solid;
-    border-color: #194550f0;
+    border-radius: 5%;
+    padding: 0px 8px;
+    
 
 }
 
