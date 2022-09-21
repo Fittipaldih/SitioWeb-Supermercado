@@ -311,8 +311,9 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
 .ListadoPago {
     align-items: center;
     flex-wrap: wrap;
-
-
+}
+.ListadoPago ul{
+    display: flex;
 }
 
 /* formato a cada imagen Categoria*/
@@ -379,7 +380,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     align-items: center;
 }
 
-#imagenFacebook {
+.logo-footer {
     max-width: 40px;
     border-radius: 50%;
     justify-content: center;
@@ -435,15 +436,21 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
 
 /*CONTACTO*/
 
+.container-contacto{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
 .contacto {
     display: flex;
-    padding: 50px;
-    justify-content: space-around;
+    
 }
 
 
 .contacto_form {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     margin: 40px;
     background-color: whitesmoke;
@@ -456,27 +463,28 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     font-size: 35px;
     color: rgb(96, 94, 94);
 }
-
-.nombre {
+.contacto_form label{
+    display: inline-block;
     margin: 5px;
+    padding: 5px;
 }
 
-.apellido {
+
+.contacto_input{
+    display: inline-block;
     margin: 5px;
+    width: 80%;
 }
 
-.email {
-    margin: 5px;
-}
 
 .comment {
-    max-width: 340px;
-    width: 340px;
-    max-height: 80px;
+    width: 75%;
+    max-height: 110px;
     margin: 5px;
 }
 
 .contacto_datos {
+    display: inline-block;
     margin: 40px;
     background-color: whitesmoke;
     padding: 70px;
