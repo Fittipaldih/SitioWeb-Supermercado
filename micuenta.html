@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,102 @@
     <title>Categorias</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="content-cabecera">
-        <div id="Encabezado">
-            <section class="seccionNavYBuscador">
-                <div class="contenedorLogo">
-                    <a href="#" class="logo">EL LOGO</a>
-                </div>
-                <div id="buscador">
-                    <input type="search" id="areaBuscador" placeholder="Buscador...">
-                </div>
-                <a id="Carrito" href="#">
-                    <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+            <div id="Encabezado">
+                <section class="seccionNavYBuscador">
+                    <div class="contenedorLogo">
+                        <a href="#" class="logo">EL LOGO</a>
+                    </div>
+                    <div id="buscador">
+                        <input type="search" id="areaBuscador" placeholder="Buscador...">
+                    </div>
+                    <a id="Carrito" href="#">
+                        <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+                    </a>
+                </section>
+            </div>
+            <nav class="navBar">
+
+                <a class="SelNav" href="index.html">Home
                 </a>
-            </section>
+                <a class="SelNav" href="categorias.html">Categorias
+                </a>
+                <a class="SelNav" href="contacto.html">Contacto
+                </a>
+                <a class="SelNav" href="micuenta.html">Mi cuenta
+                </a>
+            </nav>
         </div>
-        <nav class="navBar">
-
-            <a class="SelNav" href="index.html">Home
-            </a>
-            <a class="SelNav" href="categorias.html">Categorias
-            </a>
-            <a class="SelNav" href="contacto.html">Contacto
-            </a>
-            <a class="SelNav" href="micuenta.html">Mi cuenta
-            </a>
-        </nav>
-    </div>
     </header>
+    <main>
+        <section>
+            <article class="container_foto_nombre">
+                <div class="container_img_perfil"><img src="img/fotoperfilsilueta.webp" alt="foto_perfil"></div>
+                <div class="container_nombre">
+                    <p>Nombre y apellido</p>
+                </div>
+            </article>
 
-   <footer class="PieDePagina">
+            <article class="container_direcciones">
+                <div class="top_container_direcciones">
+                    <h2>Mis direcciones</h2>
+                    <div><button>Agregar</button></div>
+                </div>
+                <div class="tabla_direcciones-grid">
+                    <div>
+                        <h3>Alias</h3>
+                    </div>
+                    <div>
+                        <h3>Dirección</h3>
+                    </div>
+                    <div>
+                        <p>Mi depto</p>
+                    </div>
+                    <div>
+                        <p>xxxxxxxxxxxxxxx</p>
+                    </div>
+                    <div>
+                        <p>Casa-mamá</p>
+                    </div>
+                    <div>
+                        <p>xxxxxxxxxxxxxxx</p>
+                    </div>
+                </div>
+            </article>
+            <button class="img_basura"><img src="img/imagenBasura.png" alt="tacho_basura"></button>
+            <button class="img_basura"><img src="img/imagenBasura.png" alt="tacho_basura"></button>
+            
+            <article class="container_metodos_de_pago">
+                <div class="top_container_metodos">
+                <h2>Mis metodos de pago</h2>
+                <div><button>Agregar</button></div>
+                </div>
+                <div class="tabla_metodos_de_pago">
+                    <h3>Alias</h3>
+                    <p>Debito VISA</p>
+                    <p>LemonCash</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="PieDePagina">
 
         <span><a href="#">
-            <h3>Logo</h3>
-        </a></span>
-        <span><h3>Datos del grupo</h3></span>
+                <h3>Logo</h3>
+            </a></span>
+        <span>
+            <h3>Datos del grupo</h3>
+        </span>
         <span>
             <h3>Seguinos en:</h3>
         </span>
         <p><span>Lunes a Sabado de 8 a 14hs y de 16 a 20hs</span></p>
         <p>Vilte Leonardo <br>Fittipaldi Hernan <br>Sarmiento Pereyra Lautaro</p>
-        <a href="#"><img id="imagenFacebook"src="img/facebookpng.png" alt="logo facebook"></a>
-   </footer>    
+        <a href="#"><img id="imagenFacebook" src="img/facebookpng.png" alt="logo facebook"></a>
+    </footer>
 </body>
+
 </html>

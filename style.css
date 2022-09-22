@@ -554,3 +554,131 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     height: 250px;
     width: 300px;
 }
+/* Mi cuenta */
+
+
+.container_foto_nombre{
+    display: flex;
+    max-width: 80%;
+    justify-content: space-around;
+    margin:auto;
+    margin-top: 50px;
+    
+}
+.container_img_perfil{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 0px 20px;
+}
+.container_nombre{
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+}
+.container_nombre p{
+    display: inline-block;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.container_direcciones{
+    display: flex;
+    max-width: 75%;
+    flex-direction: column;
+    margin-top: 50px;
+    margin:auto;
+    
+}
+.top_container_direcciones{
+    display: flex;
+   
+}
+.top_container_direcciones h2{
+    display: inline-block;
+    width: 100%;    
+
+}
+.top_container_direcciones div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+}
+.top_container_direcciones button{
+    padding: 3px 8px;
+}
+.tabla_direcciones-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 5px solid #ccc;
+}
+.tabla_direcciones-grid div{
+    text-align: center;
+    border: solid 2px #c5c5c5;
+}
+.tabla_direcciones-grid h3{
+    background-color: #ccc;
+    margin: 0;
+    padding: 15px;
+}
+.tabla_direcciones-grid p{
+    background-color: #ddd;
+    margin: 0px;
+    padding: 15px;
+}
+.img_basura {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.container_metodos_de_pago{
+    display: flex;
+    max-width: 75%;
+    flex-direction: column;
+    margin-top: 50px;
+    margin:auto;
+    margin-bottom: 115px;
+}
+.top_container_metodos{
+    display: flex;
+}
+.top_container_metodos h2{
+    display: inline-block;
+    width: 100%;    
+
+}
+.top_container_metodos div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+}
+.top_container_metodos button{
+    padding: 3px 8px;
+}
+.tabla_metodos_de_pago{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    grid-template-columns: 500px;
+    border: 5px solid #ccc;
+}
+.tabla_metodos_de_pago h3{
+    background-color: #ccc;
+    margin: 0px;
+    
+    padding: 15px;
+    text-align: center;
+}
+.tabla_metodos_de_pago p{
+    background-color: #ddd;
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #ccc;
+}
