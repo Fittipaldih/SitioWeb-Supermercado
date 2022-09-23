@@ -111,7 +111,10 @@ nav a:hover {
     overflow: hidden;
     margin: auto;
 }
-
+.contenedor-banner input{
+    visibility: hidden;
+    display: none;
+}
 .slide {
     display: flex;
     transition: all 600ms;
@@ -408,7 +411,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
 .ContenedorProductos,
 .ContenedorPago {
     margin: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     max-width: 1400px;
 
 }
@@ -447,7 +450,10 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     display: flex;
     
 }
-
+.contacto_aside{
+    width: 350px;
+    height: 600px;
+}
 
 .contacto_form {
     display: inline-block;
@@ -641,6 +647,9 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     margin:auto;
     margin-bottom: 115px;
 }
+.top_container_metodos div{
+    margin: 0px 15px;
+}
 .top_container_metodos{
     display: flex;
 }
@@ -663,15 +672,14 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 1000px;
     margin: auto;
-    grid-template-columns: 500px;
+    grid-template-columns:100%;
     border: 5px solid #ccc;
 }
 .tabla_metodos_de_pago h3{
     background-color: #ccc;
     margin: 0px;
-    
     padding: 15px;
     text-align: center;
 }
@@ -681,4 +689,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     padding: 15px;
     text-align: center;
     border: 2px solid #ccc;
+}
+.container-flex-metodos{
+    display: flex;
 }
