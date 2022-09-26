@@ -1,0 +1,240 @@
+/* MAIN  BANNER*/
+.contenedor-banner {
+    display: flex;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.contenedor-banner input {
+    visibility: hidden;
+    display: none;
+}
+
+.slide {
+    display: flex;
+    transition: all 600ms;
+}
+
+.item-slide {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.pagina {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.item-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(34, 217, 241);
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0px 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.item-pagina:hover {
+    transform: scale(1.5);
+}
+
+.item-pagina img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all;
+}
+
+input[id="1"]:checked~.slide {
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked~.pagina .item-pagina[for="1"] {
+    background-color: white;
+}
+
+input[id="2"]:checked~.slide {
+    transform: translate3d(calc(-100% *1), 0, 0);
+}
+
+input[id="2"]:checked~.pagina .item-pagina[for="2"] {
+    background-color: white;
+}
+
+input[id="3"]:checked~.slide {
+    transform: translate3d(calc(-100% *2), 0, 0);
+}
+
+input[id="3"]:checked~.pagina .item-pagina[for="3"] {
+    background-color: white;
+}
+/* FIN FORMATO BANNER */
+
+
+/*FORMATO A SECCIONES DEL MAIN (CATEGORIAS-PRODUCTOS-PAGO)*/
+.ContenedorCat {
+    display: flex;
+    justify-content: center;
+}
+
+.Categorias-main,
+.Pago {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/fondo.png);
+    padding: 0px 15px 15px;
+    border: #e9e9e9e9 solid 2px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    max-width: 1400px;
+}
+
+.Categorias-main h2,
+.Pago h2 {
+    display: inline-block;
+    flex-shrink: 3;
+    color: rgb(96, 94, 94);
+    text-align: center;
+    border: solid 2px #ccc;
+    background-color: #eee;
+    padding: 6px 100px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.Categorias-main h2:hover,
+.Pago h2:hover {
+    color: black;
+    transition: 0.7s;
+    box-shadow: 2px 2px #bbb;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.Categorias-main a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    text-shadow: #387485;
+    font-size: large;
+}
+
+/* FORMATO A CADA PRODUCTO (HOME)*/
+.contenedor-del-producto {
+    text-align: center;
+    display: inline-block;
+    background-image: url(../img/fondo.png);
+    margin: 30px;
+    width: 500px;
+    border: solid 3px #ccc;
+    border-radius: 4px;
+}
+
+.contenedor-del-producto a {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-del-producto h3 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-del-producto h3:hover {
+    color: whitesmoke;
+    transition: 0.4s;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.135);
+}
+
+.container-productos-destacados-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-productos-destacados-main {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-productos-destacados-main h2 {
+    display: inline-block;
+    flex-shrink: 3;
+    color: rgb(96, 94, 94);
+    text-align: center;
+    border: solid 2px #ccc;
+    background-color: #eee;
+    padding: 6px 100px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.section-productos-destacados-main h2:hover {
+   color: black;
+   box-shadow: 3px 3px #ccc;
+   transition: 0.7s;
+}
+
+.ListadoCategorias,
+.ListadoPago {
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ListadoPago ul {
+    display: flex;
+    margin: 0;
+}
+
+.ListadoCategorias img,
+.Pago img {
+    margin: 10px;
+    background-color: #e9e9e9e9;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.ListadoCategorias a,
+.ListadoProductos a {
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.ImagenCategorias {
+    flex-shrink: 1;
+    max-width: 195px;
+    max-height: 180px;
+    display: inline-block;
+    box-shadow: 0.5px 0.5px #ddf;
+    border: 1px solid rgb(185, 180, 180);
+    border-radius: 10px;
+    justify-content: center;
+}
