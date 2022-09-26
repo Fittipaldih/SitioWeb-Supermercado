@@ -143,7 +143,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     font-size: large;
 }
 
-/* FORMATO A CADA PRODUCTO (HOME)*/
+/* FORMATO A CADA PRODUCTO (HOME*/
 .contenedor-del-producto {
     text-align: center;
     display: inline-block;

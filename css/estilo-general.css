@@ -148,6 +148,7 @@ nav a:hover {
     border: 1px solid #eef;
     border-radius: 10px;
     transition: all 400ms ease;
+    box-sizing: border-box;
 }
 
 .imagenProducto:hover {
@@ -165,6 +166,8 @@ nav a:hover {
     justify-content: center;
     box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .ImagenCategorias img:hover,        /* CORRESPONDE AL HOME */
