@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,109 +8,319 @@
     <title>Bebidas</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div id="Encabezado">
-            <section class="seccionNavYBuscador">
-                <div class="contenedorLogo">
-                    <a href="#" class="logo">EL LOGO</a>
-                </div>
-                <div id="buscador">
-                    <input type="search" id="areaBuscador" placeholder="Buscador...">
-                </div>
-                <a id="Carrito" href="#">
-                    <img class="imagencarrito" src="img/carrito.png" alt="carrito">
-                </a>
-            </section>
-        </div>
-        <nav class="navBar">
+        <div class="content-cabecera">
+            <div id="Encabezado">
+                <section class="seccionNavYBuscador">
+                    <div class="contenedorLogo">
+                        <a href="#" class="logo">EL LOGO</a>
+                    </div>
+                    <div id="buscador">
+                        <input type="search" id="areaBuscador" placeholder="Buscador...">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <a id="Carrito" href="carrito.html">
+                        <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+                    </a>
+                </section>
+            </div>
+            <nav class="navBar">
 
-            <a class="SelNav" href="index.html">Home
-            </a>
-            <a class="SelNav" href="categorias.html">Categorias
-            </a>
-            <a class="SelNav" href="contacto.html">Contacto
-            </a>
-            <a class="SelNav" href="micuenta.html">Mi cuenta
-            </a>
-        </nav>
+                <a class="SelNav" href="index.html">Home
+                </a>
+                <a class="SelNav" href="categorias.html">Categorias
+                </a>
+                <a class="SelNav" href="contacto.html">Contacto
+                </a>
+                <a class="SelNav" href="micuenta.html">Mi cuenta
+                </a>
+            </nav>
+        </div>
+
     </header>
 
-<main>
-    <div class="ContenedorProductos">
-        <section class="Productos">
+    <main>
+        <div class="ContenedorProductos">
+            <section class="Productos">
 
-            <h2>Productos de Bebidas</h2>
+                <h2>Productos de Bebidas</h2>
 
-            <article class="ListadoProductos">
-                <a href="#">
-                    <img src="img/7up.png" alt="seven up" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/AquariosManzana.png" alt="aquarius" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/AquariosPera.png" alt="aquarius" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/AquariusPomelo.png" alt="aquarius" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/bombay.png" alt="Bombay" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/cepitaMulti.png" alt="cepita" class="imagenProducto">
+                <article class="ListadoProductos">
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/7up.png" alt="seven up" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/AquariosManzana.png" alt="aquarius" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/AquariosPera.png" alt="aquarius" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"> <a href="#">
+                            <img src="img/AquariusPomelo.png" alt="aquarius" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/bombay.png" alt="Bombay" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/cepitaMulti.png" alt="cepita" class="imagenProducto">
 
-                <a href="#">
-                    <img src="img/CepitaNaranja.png" alt="cepita" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/cervezaBrahama.png" alt="cerveza" class="imagenProducto">
-                </a>
-                </a>
-                 <a href="#">
-                     <img src="img/CocaOriginal.png" alt="coca cola" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/CocaSinAzucar.png" alt="coca cola" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/fernetBuhero.png" alt="fernet" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/PoweradeCeleste.png" alt="powerade" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/PoweradeRojo.png" alt="powerade" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/pritty.png" alt="pritty" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/trumpeter.png" alt="trumpeter" class="imagenProducto">
-                </a>
-                <a href="#">
-                    <img src="img/vinoBlanco.png" alt="vino blanco" class="imagenProducto">
-                </a>
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
 
-            </article>
-        </section>
-    </div>
-</main>
+                            <img src="img/CepitaNaranja.png" alt="cepita" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/cervezaBrahama.png" alt="cerveza" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-img-producto-grid"> <a href="#">
+                            <img src="img/CocaOriginal.png" alt="coca cola" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/CocaSinAzucar.png" alt="coca cola" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/fernetBuhero.png" alt="fernet" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/PoweradeCeleste.png" alt="powerade" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/PoweradeRojo.png" alt="powerade" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"><a href="#">
+                            <img src="img/pritty.png" alt="pritty" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor-img-producto-grid"> <a href="#">
+                            <img src="img/trumpeter.png" alt="trumpeter" class="imagenProducto">
+                        </a>
+                        <p class="precio-producto">$1000.- </p>
+                        <div class="contenedor-titulo-input-carrito">
+                            <label class="titulo-producto" for="cantidad-productos">Titulo</label>
+                            <input type="number" name="cantidad-productos" min="0" max="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                                <path
+                                    d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
 
 
-<footer class="PieDePagina">
+                </article>
+            </section>
+        </div>
+    </main>
 
-    <span><a href="#">
-        <h3>Logo</h3>
-    </a></span>
-    <span><h3>Datos del grupo</h3></span>
-    <span>
-        <h3>Seguinos en:</h3>
-    </span>
-    <p><span>Lunes a Sabado de 8 a 14hs y de 16 a 20hs</span></p>
-    <p>Vilte Leonardo <br>Fittipaldi Hernan <br>Sarmiento Pereyra Lautaro</p>
-    <a href="#"><img id="imagenFacebook"src="img/facebookpng.png" alt="logo facebook"></a>
-</footer>
+
+    <footer class="PieDePagina">
+
+        <span><a href="#">
+                <h3>Logo</h3>
+            </a></span>
+        <span>
+            <h3>Datos del grupo</h3>
+        </span>
+        <span>
+            <h3>Seguinos en:</h3>
+        </span>
+        <p><span>Lunes a Sabado de 8 a 14hs y de 16 a 20hs</span></p>
+        <p>Vilte Leonardo <br>Fittipaldi Hernan <br>Sarmiento Pereyra Lautaro</p>
+        <div class="container-logo">
+            <a href="#"><img class="logo-footer" src="img/facebookpng.png" alt="logo-facebook"></a>
+            <a href="#"><img class="logo-footer" src="img/Instagram.jpg" alt="logo-Instagram"></a>
+        </div>
+    </footer>
 </body>
+
 </html>

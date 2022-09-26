@@ -19,6 +19,7 @@
                     </div>
                     <div id="buscador">
                         <input type="search" id="areaBuscador" placeholder="Buscador...">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>
                     </div>
                     <a id="Carrito" href="carrito.html">
                         <img class="imagencarrito" src="img/carrito.png" alt="carrito">
@@ -43,9 +44,9 @@
 
     <main>
         <section class="contenedor-banner">
-            <input type="radio" name="imagen-slide" id="1" hidden>
-            <input type="radio" name="imagen-slide" id="2" hidden>
-            <input type="radio" name="imagen-slide" id="3" hidden>
+            <input type="radio" name="imagen-slide" id="1" >
+            <input type="radio" name="imagen-slide" id="2" >
+            <input type="radio" name="imagen-slide" id="3" >
 
             <article class="slide">
                 <div class="item-slide"><img src="img/BannerCocaCola.png" alt="coca cola"></div>
@@ -54,13 +55,13 @@
             </article>
             <article class="pagina">
                 <label for="1" class="item-pagina">
-                    <img src="img/BannerCocaCola.png" alt="coca" class="imagen">
+                    <a src="#" alt="coca" class="imagen"></a>
                 </label>
                 <label for="2" class="item-pagina">
-                    <img src="img/BannerOreoPromo.png" alt="oreo" class="imagen">
+                    <a src="#" alt="oreo" class="imagen"></a>
                 </label>
                 <label for="3" class="item-pagina">
-                    <img src="img/BannerPepsi.png" alt="pepsi" class="imagen">
+                    <a src="#" alt="pepsi" class="imagen"></a>
                 </label>
             </article>
 
@@ -69,8 +70,9 @@
 
 
         <div class="ContenedorCat">
-            <section class="Categorias">
-                <h2>Categorias Destacadas</h2>
+            <section class="Categorias-main">
+                
+                <a href="categorias.html"> <h2>Categorias Destacadas</h2> </a>
                 <article class="ListadoCategorias">
                     <a href="almacen.html" class="ImagenCategorias">
                         <img src="img/catAlmacen.png" alt="almacen">
@@ -99,41 +101,44 @@
                 </article>
             </section>
         </div>
-        <section class="section-productos-destacados">
+
+        <section class="section-productos-destacados-main">
             <h2>Productos Destacados</h2>
-            <article class="containerProductos">
-                <div class="Producto">
+            <article class="container-productos-destacados-main">
+                
                     <div class="contenedor-del-producto">
                         <a href="#">
                             <div class="contenedor-imagenes-producto"><img src="img/papasLays.png" alt="Lays"
                                     class="imagenProducto"></div>
                             <h3>Lays Clasicas 145g</h3>
                         </a>
-                    </div>
                 </div>
-                <div class="Producto">
+                
                     <div class="contenedor-del-producto">
                         <a href="#">
                             <div class="contenedor-imagenes-producto"><img src="img/lecheSerenisima.png"
                                     alt="leche serenisima" class="imagenProducto"></div>
                             <h3>Leche Serenisima 1l</h3>
                         </a>
-                    </div>
                 </div>
-                <div class="Producto">
+                
+                    <div class="contenedor-del-producto">
+                        <a href="#">
+                            <div class="contenedor-imagenes-producto"><img src="img/dulceMilkaut.png"
+                                    alt="Milkaut" class="imagenProducto"></div>
+                            <h3>Dulce de Leche Milkaut 405g</h3>
+                        </a>
+                </div>
+                
                     <div class="contenedor-del-producto">
                         <a href="#">
                             <div class="contenedor-imagenes-producto"><img src="img/AquariosManzana.png"
                                     alt="AquariosManzana" class="imagenProducto"></div>
                             <h3>Aquarius Manzana 1,5l</h3>
                         </a>
-                    </div>
                 </div>
             </article>
         </section>
-
-
-
 
         <div class="ContenedorPago">
             <section class="Pago">
@@ -156,7 +161,7 @@
                             <p>Es tan simple que podés hacerlo desde el sillón de tu casa.</p>
                         </li>
                         <li>
-                            <h4>Con dinero de MercadoPago</h4>
+                            <h4>Con dinero en MercadoPago</h4>
                             <img src="img/mercadoPago.jpg" alt="mercado pago">
                             <p>Cuando pagués tu compra, la acreditación será instantánea.</p>
                         </li>
@@ -179,8 +184,11 @@
         </span>
         <p><span>Lunes a Sabado de 8 a 14hs y de 16 a 20hs</span></p>
         <p>Vilte Leonardo <br>Fittipaldi Hernan <br>Sarmiento Pereyra Lautaro</p>
-        <a href="#"><img id="imagenFacebook" src="img/facebookpng.png" alt="logo facebook"></a>
-    </footer>
+        <div class="container-logo">
+            <a href="#"><img class="logo-footer" src="img/facebookpng.png" alt="logo-facebook"></a>
+            <a href="#"><img class="logo-footer" src="img/Instagram.jpg" alt="logo-Instagram"></a>
+        </div>
+        </footer>
 </body>
 
 </html>

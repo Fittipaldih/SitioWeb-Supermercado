@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,87 +9,101 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>Contacto</title>
 </head>
+
 <body>
     <header>
         <div class="content-cabecera">
-        <div id="Encabezado">
-            <section class="seccionNavYBuscador">
-                <div class="contenedorLogo">
-                    <a href="#" class="logo">EL LOGO</a>
-                </div>
-                <div id="buscador">
-                    <input type="search" id="areaBuscador" placeholder="Buscador...">
-                </div>
-                <a id="Carrito" href="#">
-                    <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+            <div id="Encabezado">
+                <section class="seccionNavYBuscador">
+                    <div class="contenedorLogo">
+                        <a href="#" class="logo">EL LOGO</a>
+                    </div>
+                    <div id="buscador">
+                        <input type="search" id="areaBuscador" placeholder="Buscador...">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>
+                    </div>
+                    <a id="Carrito" href="#">
+                        <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+                    </a>
+                </section>
+            </div>
+            <nav class="navBar">
+
+                <a class="SelNav" href="index.html">Home
                 </a>
-            </section>
+                <a class="SelNav" href="categorias.html">Categorias
+                </a>
+
+                <a class="SelNav" href="contacto.html">Contacto
+                </a>
+                <a class="SelNav" href="micuenta.html">Mi cuenta
+
+                </a>
+            </nav>
         </div>
-        <nav class="navBar">
-
-            <a class="SelNav" href="index.html">Home
-            </a>
-            <a class="SelNav" href="categorias.html">Categorias
-            </a>
-
-            <a class="SelNav" href="contacto.html">Contacto
-            </a>
-            <a class="SelNav" href="micuenta.html">Mi cuenta
-
-            </a>
-        </nav>
-    </div>
     </header>
 
     <main>
-        <section class="contacto">       
-                <form class="contacto_form" action="#" method="post">
-                    <h2>Contacto: </h2>
+        <section class="contacto">
+            <form class="contacto_form" action="#" method="post">
+                <h2>Contacto: </h2>
                 <label class="nombre" for="nombre">Nombre:</label>
-                <input class="nombre" title="Escribi tu nombre" required type="text" name="Email" autofocus placeholder="Nombre">
+                <input class="nombre" title="Escribi tu nombre" required type="text" name="Email" autofocus
+                    placeholder="Nombre">
 
                 <label class="apellido" for="apellido">Apellido:</label>
-                <input class="apellido" title="Escribi tu apellido "required type="text" name="Email" placeholder="Apellido">
+                <input class="apellido" title="Escribi tu apellido " required type="text" name="Email"
+                    placeholder="Apellido">
 
                 <label class="email" for="Email">E-mail:</label>
-                <input class="email" title="Escribi tu mail" required type="email" name="Email" placeholder="E-mail"> 
+                <input class="email" title="Escribi tu mail" required type="email" name="Email" placeholder="E-mail">
 
-                <label  class="comment" for="comentario">Comentario:</label>
-                <textarea class="comment" title="Escribi tu comentario. (Quejas o sugerencias) " required name="comentario" cols="30" rows="10" placeholder="Tu comentario aqui..."></textarea> 
+                <label class="comment" for="comentario">Comentario:</label>
+                <textarea class="comment" title="Escribi tu comentario. (Quejas o sugerencias) " required
+                    name="comentario" cols="30" rows="10" placeholder="Tu comentario aqui..."></textarea>
 
                 <input id="submit" type="submit" value="Enviar" name="Enviar">
             </form>
-    
-        <div class="contacto_datos">
-            <aside class="contacto_aside">
-                <h2>Nombre </h2>
-                <p><span>Horarios de Atencion:</span><br>  Lunes a Sabado de 8 a 14hs y de 16 a 20hs</p>
-                <p><span>Telefono: </span><br>(011) 4444-4444</p>
-                <p><span>Dirección:</span><br>Florencio Varela 1903, San Justo</p>
-                <p><span>Instagram:</span><br>@.. </p>
-                <p><span>Facebook:</span><br>@..</p>
-                <p><span>Whatsapp:</span><br> (011) 4444-4444</p>
-            </aside>
-        </div>
+
+            <div class="contacto_datos">
+                <aside class="contacto_aside">
+                    <h2>Nombre </h2>
+                    <p><span>Horarios de Atencion:</span><br> Lunes a Sabado de 8 a 14hs y de 16 a 20hs</p>
+                    <p><span>Telefono: </span><br>(011) 4444-4444</p>
+                    <p><span>Dirección:</span><br>Florencio Varela 1903, San Justo</p>
+                    <p><span>Instagram:</span><br>@.. </p>
+                    <p><span>Facebook:</span><br>@..</p>
+                    <p><span>Whatsapp:</span><br> (011) 4444-4444</p>
+                </aside>
+            </div>
         </section>
-            <article class="contacto_mapa">
-                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15338.452654084555!2d-58.54352048231348!3d-34.68308501879307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1663280111643!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
-        
+        <article class="contacto_mapa">
+            <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15338.452654084555!2d-58.54352048231348!3d-34.68308501879307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1663280111643!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+
     </main>
-   
-   <footer class="PieDePagina">
+
+    <footer class="PieDePagina">
 
         <span><a href="#">
-            <h3>Logo</h3>
-        </a></span>
-        <span><h3>Datos del grupo</h3></span>
+                <h3>Logo</h3>
+            </a></span>
+        <span>
+            <h3>Datos del grupo</h3>
+        </span>
         <span>
             <h3>Seguinos en:</h3>
         </span>
         <p><span>Lunes a Sabado de 8 a 14hs y de 16 a 20hs</span></p>
         <p>Vilte Leonardo <br>Fittipaldi Hernan <br>Sarmiento Pereyra Lautaro</p>
-        <a href="#"><img id="imagenFacebook"src="img/facebookpng.png" alt="logo facebook"></a>
-   </footer>    
+        <div class="container-logo">
+            <a href="#"><img class="logo-footer" src="img/facebookpng.png" alt="logo-facebook"></a>
+            <a href="#"><img class="logo-footer" src="img/Instagram.jpg" alt="logo-Instagram"></a>
+        </div>
+    </footer>
 </body>
+
 </html>
