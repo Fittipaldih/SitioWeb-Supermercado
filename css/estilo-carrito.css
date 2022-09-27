@@ -1,0 +1,90 @@
+.contenedor-carrito{
+    display: flex;
+}
+.section-carrito{
+    position: relative;
+    width: 1000px;
+    margin:auto;
+    flex-direction: column;
+}
+
+.titulo-carrito{
+    display: inline-block;
+    font-size: 40px;
+   
+   
+}
+.contenedor-grid-carrito{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+   text-align: center; 
+}
+.contenedor-grid-carrito h2{
+    background-color: #ccc;
+    margin: 0px;
+    padding: 12px;
+}
+#boton-pagar{
+    display: inline-block;
+    width: 10%;
+    padding: 5px 7px;
+    align-self: flex-end;
+    margin: 5px;
+}
+.contenedor-grid-carrito p{
+    font-size: 20px;
+    border: solid 2px #ccc;
+    margin: 0px;
+    padding: 10px;
+    background-color:   rgba(255, 255, 255, 0.5);
+    
+}
+.section-carrito svg{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+   
+
+}
+.section-carrito svg:nth-child(4){
+ 
+    left: 101%;
+    bottom: 60%;
+
+}
+.section-carrito svg:nth-child(5){
+    
+    left: 101%;
+    bottom: 52%;
+
+}
+.section-carrito svg:nth-child(6){
+
+    left: 101%;
+    bottom: 43%;
+
+}
+.section-carrito svg:nth-child(7){
+
+    left: 101%;
+    bottom: 34%;
+
+}
+.section-carrito svg:nth-child(8){
+
+    left: 101%;;
+    bottom: 25%;
+
+}
+.section-carrito svg:nth-child(9){
+
+    left: 101%;
+    bottom:16%;
+
+}
+.section-carrito svg:nth-child(10){
+
+    left: 101%;
+    bottom: 7%;
+
+}
