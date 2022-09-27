@@ -1,48 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es ">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
     <link rel="stylesheet" href="css/estilo-general.css">
+    <link rel="stylesheet" href="css/estilo-carrito.css">
 </head>
+
 <body>
     <header>
         <div class="content-cabecera">
-        <div id="Encabezado">
-            <section class="seccionNavYBuscador">
-                <div class="contenedorLogo">
-                    <a href="#" class="logo">EL LOGO</a>
-                </div>
-                <div id="buscador">
-                    <input type="search" id="areaBuscador" placeholder="Buscador...">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>
-                </div>
-                <a id="Carrito" href="#">
-                    <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+            <div id="Encabezado">
+                <section class="seccionNavYBuscador">
+                    <div class="contenedorLogo">
+                        <a href="#" class="logo">EL LOGO</a>
+                    </div>
+                    <div id="buscador">
+                        <input type="search" id="areaBuscador" placeholder="Buscador...">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <a id="Carrito" href="#">
+                        <img class="imagencarrito" src="img/carrito.png" alt="carrito">
+                    </a>
+                </section>
+            </div>
+            <nav class="navBar">
+
+                <a class="SelNav" href="index.html">Home
                 </a>
+                <a class="SelNav" href="categorias.html">Categorias
+                </a>
+                <a class="SelNav" href="contacto.html">Contacto
+                </a>
+                <a class="SelNav" href="micuenta.html">Mi cuenta
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-carrito">
+            <section class="section-carrito">
+                <h2 class="titulo-carrito">Carrito</h2>
+                <article class="contenedor-grid-carrito">
+                    <h2>Producto</h2>
+                    <h2>Cantidad</h2>
+                    <h2>Precio</h2>
+                    <p>Mermelada</p>
+                    <p>2</p>
+                    <p>$100</p>
+
+                    <p>Polenta</p>
+                    <p>2</p>
+                    <p>$100</p>
+
+                    <p>1kg milanesas</p>
+                    <p>1</p>
+                    <p>$100</p>
+
+                    <p>1 agua mineral</p>
+                    <p>3</p>
+                    <p>$100</p>
+
+                    <p>1 caja garotos</p>
+                    <p>1</p>
+                    <p>$100</p>
+
+                    <p>Jabon liquido</p>
+                    <p>1</p>
+                    <p>$100</p>
+
+                    <p>1kg tomate</p>
+                    <p>1</p>
+                    <p>$100</p>
+
+                </article>
+                <input type="button" value="Pagar" id="boton-pagar">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>
+                
             </section>
         </div>
-        <nav class="navBar">
+    </main>
 
-            <a class="SelNav" href="index.html">Home
-            </a>
-            <a class="SelNav" href="categorias.html">Categorias
-            </a>
-            <a class="SelNav" href="contacto.html">Contacto
-            </a>
-            <a class="SelNav" href="micuenta.html">Mi cuenta
-            </a>
-        </nav>
-    </div>
-   </header>
-
-<main>
-
-</main>
-
-<footer class="PieDePagina">
+    <footer class="PieDePagina">
 
         <span><a href="#">
                 <h3>Logo</h3>
@@ -59,6 +112,7 @@
             <a href="#"><img class="logo-footer" src="img/facebookpng.png" alt="logo-facebook"></a>
             <a href="#"><img class="logo-footer" src="img/Instagram.jpg" alt="logo-Instagram"></a>
         </div>
-        </footer>
+    </footer>
 </body>
+
 </html>
