@@ -44,21 +44,22 @@
     </header>
 
     <main>
+        <div class="contenedor-flex">
         <section class="contacto">
             <form class="contacto_form" action="#" method="post">
                 <h2>Contacto: </h2>
-                <label class="nombre" for="nombre">Nombre:</label>
+                <label for="nombre">Nombre:</label>
                 <input class="nombre" title="Escribi tu nombre" required type="text" name="Email" autofocus
                     placeholder="Nombre">
 
-                <label class="apellido" for="apellido">Apellido:</label>
+                <label for="apellido">Apellido:</label>
                 <input class="apellido" title="Escribi tu apellido " required type="text" name="Email"
                     placeholder="Apellido">
 
-                <label class="email" for="Email">E-mail:</label>
+                <label for="Email">E-mail:</label>
                 <input class="email" title="Escribi tu mail" required type="email" name="Email" placeholder="E-mail">
 
-                <label class="comment" for="comentario">Comentario:</label>
+                <label id="comentario" for="comentario">Comentario:</label>
                 <textarea class="comment" title="Escribi tu comentario. (Quejas o sugerencias) " required
                     name="comentario" cols="30" rows="10" placeholder="Tu comentario aqui..."></textarea>
 
@@ -77,6 +78,7 @@
                 </aside>
             </div>
         </section>
+    </div>
         <article class="contacto_mapa">
             <iframe id="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15338.452654084555!2d-58.54352048231348!3d-34.68308501879307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1663280111643!5m2!1ses-419!2sar"
