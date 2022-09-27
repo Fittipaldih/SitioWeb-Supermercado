@@ -59,6 +59,7 @@
     display: grid;
     grid-template-columns: auto auto;
     border: 5px solid #ccc;
+    position: relative;
 }
 
 .tabla_direcciones-grid div {
@@ -76,12 +77,6 @@
     background-color: #ddd;
     margin: 0px;
     padding: 15px;
-}
-
-.img_basura {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
 }
 
 .container_metodos_de_pago {
@@ -145,4 +140,37 @@
 
 .container-flex-metodos {
     display: flex;
+}
+
+.tabla_metodos_de_pago a,
+.tabla_direcciones-grid a {
+    display: inline-block;
+    position: relative;
+}
+
+
+.container_direcciones svg, .container_metodos_de_pago svg{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+}
+#eliminar1{
+    top: 50%;
+    left: 88%;
+}
+#eliminar2{
+    top: 56%;
+    left: 88%;
+}
+
+#eliminar3{
+    position: absolute;
+    top: 77%;
+    left: 95%;
+}
+
+#eliminar4{
+    position: absolute;
+    top: 82%;
+    left: 95%;
 }
