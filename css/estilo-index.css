@@ -125,6 +125,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     margin: auto;
     margin-top: 5px;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .Categorias-main h2:hover,
@@ -167,6 +168,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     display: inline-block;
     text-decoration: none;
     color: black;
+    transition: 0.5s;
 }
 
 .contenedor-del-producto h3:hover {
@@ -196,6 +198,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     margin: auto;
     margin-top: 5px;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .section-productos-destacados-main h2:hover {
