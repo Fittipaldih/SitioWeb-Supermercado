@@ -2,15 +2,18 @@
 .zona-categorias {
     display: flex;
     flex-direction: column;
-    margin: 100px;
-    font-family:  Verdana, sans-serif;
-    flex-wrap: wrap;
+    text-align: center;
+    margin:20px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-wrap: wrap-reverse;
     background-image: url(../img/fondo.png);
     padding: 15px;
     border: #e9e9e9e9 solid 5px;
     justify-content: center;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 2px #ccc;
+    max-width: 1300px;
+    
 }
 
 .zona-categorias h2 {
@@ -20,7 +23,7 @@
     text-align: center;
     border: solid 2px #ccc;
     background-color: #eee;
-    padding: 10px 200px;
+    padding: 10px 150px;
     margin: auto;
     margin-top: 5px;
     border-radius: 15px 15px 5px 5px;
@@ -32,18 +35,21 @@
 }
 
 .conteiner-flexbox-categorias {
-    margin-top: 5px;
+    
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: auto;
     flex-direction: row;
-    justify-content:space-evenly;
+    width: 100%;
 }
 
 .categoria {
     display: flex;
     box-sizing: border-box;
     background-color: rgb(230, 226, 226);
-    margin: 20px 40px;
+    margin: 10px 30px;
     border: solid 1.25px rgb(161, 161, 161);
     transition: all 400ms ease;
     border: #5c5b5b solid 2px;

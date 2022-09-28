@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo-micuenta.css">
-    <link rel="stylesheet" href="css/estilo-general.css">
-    <title>Categorias</title>
+    <link href="css/estilo-general.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/estilo-producto.css">
+    <title>Producto</title>
 </head>
 
 <body>
@@ -45,62 +45,35 @@
         </div>
     </header>
     <main>
-        <section>
-            <article class="container_foto_nombre">
-                <div class="container_img_perfil"><img src="img/fotoperfilsilueta.webp" alt="foto_perfil"></div>
-                <div class="container_nombre">
-                    <p>Nombre y apellido</p>
+        <section class="contenedor-producto">
+            <article class="contenedor-img-producto"><img src="img/cafeVirginia.png" alt="cafeVirginia"></article>
+            <article class="caracteristicas-producto">
+                <h2>Nombre del producto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus inventore, ipsam dolor tenetur
+                    accusantium reprehenderit voluptate consectetur ad est fugit consequatur adipisci dolorum ratione ab
+                    dolorem recusandae saepe voluptatem beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias nam provident eum. Corporis ab alias dolor ut odit suscipit maxime delectus neque porro.
+                    Dolorem magnam delectus labore ratione officiis quibusdam?</p>
+                <label for="cantidad-producto"></label>
+                <div class="contenedor-btn-input">
+                    <input type="number" min="1" name="cantidad-producto">
+                    <button id="btn-agregar">Agregar</button>
                 </div>
             </article>
-
-            <article class="container_direcciones">
-                <div class="top_container_direcciones">
-                    <h2>Mis direcciones</h2>
-                    <div><button>Agregar</button></div>
-                </div>
-                <div class="tabla_direcciones-grid">
-                    <div>
-                        <h3>Alias</h3>
-                    </div>
-                    <div>
-                        <h3>Dirección</h3>
-                    </div>
-                    <div>
-                        <p>Mi depto</p>
-                    </div>
-                    <div>
-                        <p>xxxxxxxxxxxxxxx </p>
-                    </div>
-                    <div>
-                        <p>Casa-mamá</p>
-                    </div>
-                    <div>
-                        <p>xxxxxxxxxxxxxxx</p>
-                    </div>
-                </div>
-                <a href="#"> 
-                    <svg id="eliminar1" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z">
-                        </path></svg>
-                </a> <a href="#">
-                    <svg id="eliminar2" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z">
-                        </path></svg></a>
+        </section>
+        <section class="contenedor-productos-similares">
+            <h2>Productos similares</h2>
+            <div id="flex-productos">
+            <article class="productos-similares"><img src="img/AquariusPomelo.png" alt="AquariusPomelo">
+                <h3>Titulo</h3>
             </article>
-            
-
-            <div class="container_metodos_de_pago">
-                <div class="top_container_metodos">
-                    <h2>Mis metodos de pago</h2>
-                    <div><button>Agregar</button></div>
-                </div>
-                
-                    <div class="tabla_metodos_de_pago">
-                        <h3>Alias</h3>
-                        <p>Debito VISA</p>
-                        <p>LemonCash</p>
-                    </div>
-                        <a href="#"><svg id="eliminar3" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg></a>
-                       <a href="#"><svg id="eliminar4" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg></a>
+            <article class="productos-similares"><img src="img/AquariusPomelo.png" alt="AquariusPomelo">
+                <h3>Titulo</h3>
             </article>
+            <article class="productos-similares"><img src="img/CepitaNaranja.png" alt="CepitaNaranja">
+                <h3>Titulo</h3>
+            </article>
+        </div>
         </section>
     </main>
     <footer class="PieDePagina">
