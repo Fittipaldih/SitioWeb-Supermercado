@@ -29,6 +29,7 @@
 
 .container_direcciones {
     display: flex;
+    position: relative;
     max-width: 75%;
     flex-direction: column;
     margin-top: 50px;
@@ -86,6 +87,7 @@
     margin-top: 50px;
     margin: auto;
     margin-bottom: 115px;
+    position: relative;
 }
 
 .top_container_metodos div {
@@ -155,22 +157,21 @@
     height: 35px;
 }
 #eliminar1{
-    top: 50%;
-    left: 88%;
+    top: 58%;
+    left: 100%;
 }
 #eliminar2{
-    top: 56%;
-    left: 88%;
+    top: 81%;
+    left: 100%;
 }
 
 #eliminar3{
-    position: absolute;
-    top: 77%;
-    left: 95%;
+    top: 58%;
+    left: 86%;
+
 }
 
 #eliminar4{
-    position: absolute;
-    top: 82%;
-    left: 95%;
+    top: 80%;
+    left: 86%;
 }
