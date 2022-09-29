@@ -32,8 +32,8 @@
     position: relative;
     max-width: 75%;
     flex-direction: column;
-    margin-top: 50px;
-    margin: auto;
+    
+    margin: 50px auto;
 }
 
 .top_container_direcciones {
@@ -84,9 +84,8 @@
     display: flex;
     max-width: 75%;
     flex-direction: column;
-    margin-top: 50px;
-    margin: auto;
-    margin-bottom: 115px;
+    margin: 90px auto;
+    
     position: relative;
 }
 
@@ -116,10 +115,12 @@
 
 .tabla_metodos_de_pago {
     display: grid;
+    grid-template-columns: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    
+    width:100%;
     margin: auto;
     grid-template-columns: 100%;
     border: 5px solid #ccc;
@@ -167,11 +168,11 @@
 
 #eliminar3{
     top: 58%;
-    left: 86%;
+    left: 101%;
 
 }
 
 #eliminar4{
     top: 80%;
-    left: 86%;
+    left: 101%;
 }
