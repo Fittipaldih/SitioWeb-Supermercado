@@ -37,17 +37,18 @@ img {
 
 .logo {
     display: inline-block;
-    padding: 25px;
+    
     background-color: #E09D5C;
     text-decoration: none;
 }
 
 #buscador {
     display: flex;
-    width: 60%;
+    width: 50%;
     position: relative;
     align-items: center;
     text-align: center;
+    max-width: 1000px;
 }
 #buscador svg{
     position: absolute;
@@ -62,7 +63,21 @@ img {
     position: absolute;
     padding-left: 20px;
 }
-
+#btn-login{
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    margin: 0px;
+}
+#btn-login input{
+    color: #fff;
+    background-color: #313030;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#btn-login input:hover{
+    color: #6cdcea;
+    border: 2px inset black;
+}
 #Carrito {
     display: inline-block;
     text-align: center;
