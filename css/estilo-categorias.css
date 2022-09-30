@@ -69,8 +69,6 @@
 
 .categoria a:hover{
     color: #387485;
-    transition: 0.5s;
-
 }
 
 .categoria:hover {
@@ -198,6 +196,7 @@
     height: 30px;
     padding: 1px 5px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .contenedor-titulo-input-carrito svg:hover{

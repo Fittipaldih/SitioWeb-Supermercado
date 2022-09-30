@@ -246,3 +246,27 @@ nav a:hover {
     transition: 0.7s;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.135);
 }
+
+
+.contenedor-botones-categorias{
+    display: flex;
+    justify-content: space-between;
+}
+
+.volver-a-categorias, .siguiente-categoria{
+    font-size: 20px;
+    color: rgb(96, 94, 94);
+    text-align: center;
+    border: solid 2px #ccc;
+    background-color: #eee;
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.volver-a-categorias:hover, .siguiente-categoria:hover{
+    color: #387485;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
