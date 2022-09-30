@@ -66,6 +66,14 @@ main{
     border: 2px solid #aaa;
     border-radius: 10px;
 }
+
+.productos-similares:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(1%);
+    transition: 0.5s;
+    background-color: #b0dfed;;
+}
+
 .productos-similares img{
     border: 1px solid black;
     border-radius: 8px;

@@ -248,4 +248,10 @@ nav a:hover {
     margin-top: 5px;
     border-radius: 10px;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.volver-a-categorias:hover, .siguiente-categoria:hover{
+    color: #387485;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
