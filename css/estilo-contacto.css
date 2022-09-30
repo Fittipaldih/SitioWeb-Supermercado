@@ -1,4 +1,17 @@
 /*HTML CONTACTO*/
+#navcontacto{
+    background-color: #3b879e92;
+    color: rgb(200, 200, 200);
+    transition: 0.6s;
+    box-shadow: 3px 3px #bbb;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#navcontacto:hover{
+    color: rgb(241, 238, 238);
+    background-color: #2f859c;
+}
+
 main div{
     display: flex;
 }
