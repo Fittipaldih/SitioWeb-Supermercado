@@ -4,7 +4,6 @@ main{
 .contenedor-producto{
     display: flex;
     margin: 30px auto;
-    
     max-width: 1300px;
     width: auto;
     justify-content: space-around;
@@ -27,20 +26,21 @@ main{
     max-height: 25px;
     align-self: center;
 }
+
 #btn-agregar{
-    padding: 5px 30px 5px 15px;
+    padding: 5px;
     color: white;
     background-color: #aaa;
-    border: solid 2px #aaa;
+    border: solid 2px rgb(147, 145, 145);
     border-radius: 5px;
     margin: 10px;
     cursor: pointer;
-    
+
 }
 .contenedor-btn-input{
     display: flex;
     justify-content: flex-end;
-    margin: 10px;
+    margin: 15px;
 }
 .contenedor-productos-similares{
     display: flex;

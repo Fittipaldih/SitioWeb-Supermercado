@@ -12,13 +12,36 @@
 <body>
     <main>
         <section class="container-flex">
-            <div class="contenido">
-                <div class="contenedor-label-input"><label for="">Email</label><input type="email" placeholder="Email.."></div>
-                <div class="contenedor-label-input"><label for="">Nombre</label><input type="text" placeholder="nombre.."></div>
-                <div class="contenedor-label-input"><label for="">Apellido</label><input type="text" placeholder="apellido.."></div>
-                <div class="contenedor-label-input"><label for="">Contraseña</label><input type="password" placeholder="Contraseña"></div>
-                <div class="contenedor-label-input"><label for="">Repetir Contraseña</label><input type="password" placeholder="repita contraseña"></div>
-                <div class="contenedor-btn"><a href="index.html"><button>cancelar</button></a><a href="index.html"><button>Guardar</button></a></div>
+            <form class="contenido">
+                <h2>Iniciar sesión</h2>
+                <div class="contenedor-label-input">
+                    <label for="">Email:</label>
+                    <input required type="email" placeholder="Email..">
+                    </div>
+                <div class="contenedor-label-input">
+                    <label for="">Nombre:</label>
+                    <input required type="text" placeholder="nombre..">
+                </div>
+                <div class="contenedor-label-input">
+                    <label for="">Apellido:</label>
+                    <input required type="text" placeholder="apellido..">
+                </div>
+                <div class="contenedor-label-input">
+                    <label for="">Contraseña:</label>
+                    <input required type="password" placeholder="contraseña">
+                </div>
+                <div class="contenedor-label-input">
+                    <label for="">Validación:</label>
+                    <input required type="password" placeholder="repetir contraseña">
+                </div>
+                <div class="contenedor-btn">
+                    <a href="index.html">
+                        <input formnovalidate="" type="button" value="Volver atrás">
+                    </a>
+                    <a href="index.html">
+                        <input type="submit" value="Iniciar sesion">
+                        </a>
+                    </form>
         </section>
     </main>
 </body>

@@ -14,28 +14,32 @@
             <h2>Nueva tarjeta</h2>
             
             <div class="container-input-label">
-                <label for="alias">Alias</label>
-                <input type="text" id="alias" name="alias" placeholder="Alias">
+                <label for="alias">Alias: </label>
+                <input autofocus required type="text" id="alias" name="alias" placeholder="Alias">
             </div>
 
             <div class="container-input-label">
-                <label for="numero-tarjeta">Número Tarjeta</label>
-                <input type="number" name="numero-tarjeta" id="numero-tarjeta"></div>
+                <label for="numero-tarjeta">Número tarjeta: </label>
+                <input autocomplete="off" required type="number" placeholder= "Núm tarjeta" name="numero-tarjeta" id="numero-tarjeta"></div>
 
             <div class="container-input-label">
-                <label for="codigo">Codigo</label>
-                <input type="text" id="codigo" name="codigo" placeholder="Cod."></div>
+                <label for="codigo">Código</label>
+                <input required type="text" id="codigo" name="codigo" placeholder="Código"></div>
 
             <div class="container-input-label">
-                <label for="vencimiento"> Vencimiento</label>
-                <input type="date" id="vencimiento" name="vencimiento" placeholder="Vto."></div>
+                <label  for="vencimiento"> Vencimiento: </label>
+                <input required type="date" id="vencimiento" name="vencimiento" placeholder="Vto."></div>
 
             <div class="container-input-label">
-                <label for="nombre-titular">Nombre Titular</label>
-                <input type="text" id="titular" name="nombre-titular"></div>
+                <label for="nombre-titular">Nombre titular:</label>
+                <input required type="text" id="titular" placeholder="Nombre"name="nombre-titular">
+            </div>
 
             <div class="container-input-label"> 
-                <input id="btn-guardar" type="button" value="Guardar">
+                <a href="micuenta.html">
+                    <input formnovalidate="" type="button" value="Volver">
+                </a>
+                <input type="submit" value="Confirmar">
             </div>
         </form>
         </div>

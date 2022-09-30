@@ -24,35 +24,43 @@
     flex-direction: column;
     justify-items: center;
 }
+
 .contenido h2{
     margin:0px;
+    margin-bottom: 10px;
     align-self: center;
 }
+
 .contenedor-label-input{
     margin: 5px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
 
-}
 .contenedor-label-input select{
-    padding: 10px;
+    padding: 5px 0px 5px 1px;
     margin: 0px 10px;
+    cursor: pointer;
 }
+
 .contenedor-label-input input{
-    padding: 5px;
+    padding: 5px 30px 5px 1px;
     margin: 0px 10px;
     justify-self: flex-end;
-    width: 50%;
-}
-#btn-guardar{
+    cursor: pointer;
     width: 80px;
-    padding: 10px;
     align-self: flex-end;
 }
+
 .contenedor-label-input label{
     align-self: center;
     margin: 5px 10px;
 }
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
+
+

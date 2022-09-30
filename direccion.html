@@ -12,48 +12,58 @@
 <body>
     <main>
         <div class="contenedor-posicion">
-        <section class="contenido">
+        <form class="contenido" action="#">
             <h2>Nueva dirección</h2>
             <div class="contenedor-label-input">
                 <label for="Alias">Alias:</label>
-                <input type="text" name="Alias" placeholder="Alias">
+                <input autofocus required type="text" name="Alias" placeholder="Alias">
             </div>
             <div class="contenedor-label-input">
                 <label for="">Provincia:</label>
-                <select name="Provincia">
+                <select required name="Provincia">
                     <option value="1">Buenos Aires</option>
-                    <option value="2">Cordoba</option>
+                    <option value="2">Córdoba</option>
                     <option value="3">La Rioja</option>
                     <option value="4">Salta</option>
                     <option value="5">Jujuy</option>
+                    <option value="6">Entre Rios</option>
                 </select>
             </div>
             <div class="contenedor-label-input">
                 <label for="">Localidad:</label>
-                <select name="Localidad">
+                <select required name="Localidad" required>
                     <option value="1">La Matanza</option>
                     <option value="2">Quilmes</option>
-                    <option value="3">Tres de Febrero</option>
+                    <option value="3">Morón</option>
+                    <option value="4">Berazategui</option>
+                    <option value="5">Avellaneda</option>
+                    <option value="6">Loma Hermosa</option>
                 </select>
             </div>
             <div class="contenedor-label-input">
                 <label for="Dirección">Dirección:</label>
-                <input type="text" placeholder="Direccion" name="Direccion">
+                <input type="text" placeholder="Dirección" name="Direccion" required>
             </div>
             <div class="contenedor-label-input">
                 <label for="Telefono">Télefono:</label>
-                <input type="number" name="Telefono" placeholder="Tel" id="input-number:">
+                <input type="number" name="Telefono" placeholder="Tel" id="input-number:" required>
             </div>
             <div class="contenedor-label-input">
                 <label for="Piso">Piso:</label>
-                <input type="number" name="Piso" placeholder="Piso" id="input-number">
+                <input type="number" name="Piso" placeholder="Piso" id="input-number" required>
                 </div>
                 <div class="contenedor-label-input">
                 <label for="Dto">Dto:</label>
-                <input type="text" name="Dto" placeholder="Dto">
+                <input type="text" name="Dto" placeholder="Dto." required>
             </div>
-            <button id="btn-guardar">Guardar</button>
-        </section>
+
+            <div class="contenedor-btn"> 
+            <a href="micuenta.html">
+                <input formnovalidate="" type="button" value="Volver">
+            </a>
+                <input  type="submit" value="Confirmar">
+         </div>
+        </form>
     </div>
     </main>
 </body>
