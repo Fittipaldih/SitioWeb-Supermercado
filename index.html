@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link href="css/estilo-index.css" rel="stylesheet">
     <link href="css/estilo-general.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo-login.css">
 </head>
 
 <body>
@@ -28,7 +29,9 @@
                             </path>
                         </svg>
                     </div>
-                    <div id="btn-login"><a href="login.html"><input type="button" value="LOGIN"></a></div>
+                    
+                    <div id="btn-login"><a href="#"><input type="button" value="LOGIN"></a></div>
+                   
                     <a id="Carrito" href="carrito.html">
                         <img class="imagencarrito" src="img/carrito.png" alt="carrito">
                     </a>
@@ -50,8 +53,39 @@
 
     </header>
 
-
     <main>
+            <section class="container-flex">
+                <form class="contenido">
+                    <h2>Iniciar sesión</h2>
+                    <div class="contenedor-label-input">
+                        <label for="">Email:</label>
+                        <input required type="email" placeholder="Email..">
+                    </div>
+                    <div class="contenedor-label-input">
+                        <label for="">Nombre:</label>
+                        <input required type="text" placeholder="nombre..">
+                    </div>
+                    <div class="contenedor-label-input">
+                        <label for="">Apellido:</label>
+                        <input required type="text" placeholder="apellido..">
+                    </div>
+                    <div class="contenedor-label-input">
+                        <label for="">Contraseña:</label>
+                        <input required type="password" placeholder="contraseña">
+                    </div>
+                    <div class="contenedor-label-input">
+                        <label for="">Validación:</label>
+                        <input required type="password" placeholder="repetir contraseña">
+                    </div>
+                    <div class="contenedor-btn">
+                        <a href="index.html">
+                            <input formnovalidate="" type="button" value="Volver atrás" id="atras">
+                        </a>
+                        <a href="index.html">
+                            <input type="submit" value="Iniciar sesion" id="iniciar">
+                        </a>
+                </form>
+            </section>
         <section class="contenedor-banner">
             <input type="radio" name="imagen-slide" id="1">
             <input type="radio" name="imagen-slide" id="2">
@@ -73,7 +107,6 @@
                     <a src="#" alt="pepsi" class="imagen"></a>
                 </label>
             </article>
-
 
         </section>
 
@@ -132,13 +165,13 @@
                         <h3>Leche Serenisima 1l</h3>
                     </a>
                 </div>
-                
-                    <div class="contenedor-del-producto">
-                        <a href="producto.html">
-                            <div class="contenedor-imagenes-producto"><img src="img/dulceMilkaut.png"
-                                    alt="Milkaut" class="imagenProducto"></div>
-                            <h3>Dulce de Leche Milkaut 405g</h3>
-                        </a>
+
+                <div class="contenedor-del-producto">
+                    <a href="producto.html">
+                        <div class="contenedor-imagenes-producto"><img src="img/dulceMilkaut.png" alt="Milkaut"
+                                class="imagenProducto"></div>
+                        <h3>Dulce de Leche Milkaut 405g</h3>
+                    </a>
                 </div>
 
                 <div class="contenedor-del-producto">
@@ -153,7 +186,7 @@
         <section class="formas-pago">
             <h2>FORMAS DE PAGO</h2>
 
-          
+
             <div class="body-slider">
                 <img src="img/visaLogo.svg" alt="visa">
                 <img src="img/mercado-pago.svg" alt="mercado-pago">
@@ -202,6 +235,7 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/Slider.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 
