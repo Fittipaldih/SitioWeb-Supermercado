@@ -22,6 +22,11 @@
     flex-direction: column;
     justify-items: center;
 }
+
+.contenido h2{
+ text-align: center;
+ margin-bottom: 5px;
+}
 .contenedor-label-input{
     margin: 5px;
     display: flex;
@@ -39,9 +44,21 @@
 }
 .contenedor-btn{
     display: flex;
-    justify-content: space-around;
-    margin: 5px;
+    justify-content: space-between;
 }
-.contenedor-btn button{
-    padding: 5px 12px;
+
+
+.contenedor-btn input{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: 0.5s;
+}
+
+.contenedor-btn input:hover{
+    box-shadow: 5px rgba(0, 0, 0, 0.4);
+    transform: translateY(1%);
+    transition: 0.5s;
+    background-color: #dddcdc;
 }

@@ -1,4 +1,19 @@
 /*HTML CATEGORIAS */
+
+#categorias{
+    background-color: #3b879e92;
+    color: rgb(200, 200, 200);
+    transition: 0.6s;
+    box-shadow: 3px 3px #bbb;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#categorias:hover{
+    color: rgb(241, 238, 238);
+    background-color: #2f859c;
+    transition: 0.6s;
+}
+
 .zona-categorias {
     display: flex;
     flex-direction: column;
@@ -26,7 +41,7 @@
     padding: 10px 150px;
     margin: auto;
     margin-top: 5px;
-    border-radius: 15px 15px 5px 5px;
+    border-radius: 15px;
     transition: 0.5s;
 }
 
