@@ -100,8 +100,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     justify-content: center;
 }
 
-.Categorias-main,
-.Pago {
+.Categorias-main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -114,8 +113,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     max-width: 1400px;
 }
 
-.Categorias-main h2,
-.Pago h2 {
+.Categorias-main h2{
     display: inline-block;
     flex-shrink: 3;
     color: rgb(96, 94, 94);
@@ -129,8 +127,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     transition: 0.5s;
 }
 
-.Categorias-main h2:hover,
-.Pago h2:hover {
+.Categorias-main h2:hover{
     color: black;
     transition: 0.7s;
     box-shadow: 2px 2px #bbb;
@@ -208,19 +205,14 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     transition: 0.7s;
 }
 
-.ListadoCategorias,
-.ListadoPago {
+.ListadoCategorias{
     align-items: center;
     flex-wrap: wrap;
 }
 
-.ListadoPago ul {
-    display: flex;
-    margin: 0;
-}
 
-.ListadoCategorias img,
-.Pago img {
+
+.ListadoCategorias img{
     margin: 10px;
     background-color: #e9e9e9e9;
     box-shadow: 1px 1px 1px 1px #ccc;
@@ -241,5 +233,27 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     border: 1px solid rgb(185, 180, 180);
     border-radius: 10px;
     justify-content: center;
+}
+
+/* Formas de pago + carrousel */
+
+.formas-pago{
+    max-width: 1400px;
+    align-items: center;
+    margin: auto;
+    padding: 30px 0;
+}
+.body-slider{
+    background-color: white;
+  
+}
+.slider-prev::before, .slick-arrow::before{
+    color: #000;
+    background-color: rgb(34, 217, 241);
+    border-radius: 50%;
+}
+
+.body-slider img{
+    height: 200px;
 }
 
