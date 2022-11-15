@@ -65,21 +65,21 @@ img {
     padding-left: 20px;
 }
 
-#btn-login {
+#login {
     border-radius: 10px;
     border: 2px solid whitesmoke;
     margin: 0px;
-}
-
-#btn-login input {
     color: #fff;
     background-color: #313030;
     cursor: pointer;
     border-radius: 10px;
     transition: 0.5s;
+    padding: 5px;
 }
 
-#btn-login input:hover {
+
+
+#login input:hover {
     color: #6cdcea;
     border: 2px inset black;
 }

@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Practico In</title>
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link href="css/estilo-index.css" rel="stylesheet">
     <link href="css/estilo-general.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo-login.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body>
@@ -29,9 +28,7 @@
                             </path>
                         </svg>
                     </div>
-                    
-                    <div id="btn-login"><a href="#"><input type="button" value="LOGIN"></a></div>
-                   
+                    <button id="login" onclick="abrirRegistrarse()">LOGIN</button>
                     <a id="Carrito" href="carrito.html">
                         <img class="imagencarrito" src="img/carrito.png" alt="carrito">
                     </a>
@@ -54,38 +51,53 @@
     </header>
 
     <main>
-            <section class="container-flex">
-                <form class="contenido">
-                    <h2>Iniciar sesión</h2>
-                    <div class="contenedor-label-input">
-                        <label for="">Email:</label>
-                        <input required type="email" placeholder="Email..">
-                    </div>
-                    <div class="contenedor-label-input">
-                        <label for="">Nombre:</label>
-                        <input required type="text" placeholder="nombre..">
-                    </div>
-                    <div class="contenedor-label-input">
-                        <label for="">Apellido:</label>
-                        <input required type="text" placeholder="apellido..">
-                    </div>
-                    <div class="contenedor-label-input">
-                        <label for="">Contraseña:</label>
-                        <input required type="password" placeholder="contraseña">
-                    </div>
-                    <div class="contenedor-label-input">
-                        <label for="">Validación:</label>
-                        <input required type="password" placeholder="repetir contraseña">
-                    </div>
-                    <div class="contenedor-btn">
-                        <a href="index.html">
-                            <input formnovalidate="" type="button" value="Volver atrás" id="atras">
-                        </a>
-                        <a href="index.html">
-                            <input type="submit" value="Iniciar sesion" id="iniciar">
-                        </a>
-                </form>
-            </section>
+        <!--Ventana pop up registrarse-->
+        <dialog class="ventanaRegistrarse">
+            <h2 id="registrarse-titulo">Registrarse</h2>
+            <form id="formulario-registrarse">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Ingrese email">
+
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingrese usuario">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingrese apellido" >
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" placeholder="Ingrese contraseña">
+
+                <label for="rcontraseña">Repetir contraseña</label>
+                <input type="password" name="rcontraseña">
+
+                <p>¿Ya tenes cuenta? <a href="#" id="r-iniciarSesion">Iniciar sesion</a></p>
+
+                <div class="botones">
+                    <button id="btn-cancelar"onclick="cerrarRegistrarse()">Cancelar</button>
+                    <button id="btn-guardar">Guardar</button>
+                </div>
+            </form>
+        </dialog>
+        
+        <!-- Ventana pop up iniciar sesion-->
+        <dialog class="iniciarSesion" id="ventanaPopUp">
+            <button onclick="cerrarPopUp()" id="cerrar">X</button>
+            <h2>Iniciar sesion</h2>
+            <form class="formulario-iniciar-sesion">
+                
+                <label for="nombre-usuario">Usuario:</label>
+                <input type="text" class="campo-usuario", id="nombre-usurio" name="nombre">
+                
+                <label for="contraseña">Contraseña:</label>
+                <input type="text" class="campo-password" id="contraseña" name="contraseña">
+                <a href="#" id="olvidaste-contraseña">¿Olvidaste tu contraseña?</a>
+                
+                <button id="submit">Login</button>
+                <p>¿No tenés cuenta? <a id="Registrarse"href="#" onclick="abrirRegistrarse()">Registrate</a></p>
+            </form>
+        </dialog>
+
         <section class="contenedor-banner">
             <input type="radio" name="imagen-slide" id="1">
             <input type="radio" name="imagen-slide" id="2">
@@ -186,7 +198,6 @@
         <section class="formas-pago">
             <h2>FORMAS DE PAGO</h2>
 
-
             <div class="body-slider">
                 <img src="img/visaLogo.svg" alt="visa">
                 <img src="img/mercado-pago.svg" alt="mercado-pago">
@@ -232,10 +243,10 @@
             </a>
         </div>
     </footer>
+    <script src="js/index.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/Slider.js"></script>
-    <script src="js/index.js"></script>
 </body>
 
 

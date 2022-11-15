@@ -1,20 +1,24 @@
-if(document.getElementById("#btn-login")){
 
-var button = document.getElementById("#btn-login");
-var body = document.getElementsByTagName("body");
-var cerrar = document.getElementById("#atras");
-var ventana = document.getElementsByClassName(".container-flex")
+const ventanaIniciarSesion = document.querySelector(".iniciarSesion")
+const boton = document.querySelector("#login");
+
+const abrirPopUp = () => {
+    ventanaIniciarSesion.showModal();
+}
+const cerrarPopUp = () => {
+    ventanaIniciarSesion.close();
+};
 
 
+const registrarse = document.querySelector("#Registrarse");
+const ventanaRegistrarse = document.querySelector(".ventanaRegistrarse")
 
 
-button.onclick = () => {
-    ventana.style.display = "flex";
+const abrirRegistrarse = () => {
+    ventanaRegistrarse.showModal();
+}
+const cerrarRegistrarse = () => {
+    ventanaRegistrarse.close();
 }
 
-cerrar.onclick = () => {
-    ventana.style.display = "none";
-
-}
-}
 

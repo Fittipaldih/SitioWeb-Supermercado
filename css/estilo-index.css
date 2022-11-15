@@ -271,3 +271,73 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     height: 200px;
 }
 
+
+/* ventana pop-up iniciar sesion*/
+
+#ventanaPopUp{
+    position: relative;
+    text-align: center;
+    min-width: 30%;
+    padding: 30px;
+}
+
+#cerrar{
+    background-color: none;
+    color: red;
+    position: absolute;
+    left: 340px;
+    top: 10px;
+}
+.formulario-iniciar-sesion{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.campo-usuario, .campo-password{
+    margin:10px;
+    padding: 3px;
+}
+#olvidaste-contraseña{
+    align-self: flex-end;
+    
+}
+#submit{   
+    margin: auto;
+    margin-top: 15px;
+    align-self: center;
+    padding: 5px 15px;
+}
+
+/* ventana registrarse */
+.ventanaRegistrarse {
+    max-width: 500px;
+    padding: 30px;
+}
+
+.formulario-registrarse{
+    display: flex;
+    flex-direction: column;
+}
+.formulario-registrarse, input{
+    width: 90%;
+    padding: 5px;
+    margin: 7px;
+}
+.botones{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+#btn-cancelar{
+    padding:5px 10px;
+}
+#btn-guardar{
+    padding: 5px 10px;
+}
+
+
+
+
+
+
+

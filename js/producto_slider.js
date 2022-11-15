@@ -1,9 +1,7 @@
 
-$(".body-slider").slick({
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    autoplay: true, 
-    autoplaySpeed: 2500,
+$(".flex-productos").slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
     responsive: [
         {
           breakpoint: 1024,
@@ -28,5 +26,3 @@ $(".body-slider").slick({
         }
     ]
 });
-
-

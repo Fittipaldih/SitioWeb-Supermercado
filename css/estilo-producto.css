@@ -45,11 +45,11 @@ main{
 .contenedor-productos-similares{
     display: flex;
     margin: 30px auto;
-    max-width: 100%;
+    max-width: 95%;
     width: auto;
     justify-content: space-around;
     flex-direction: column;
-    background-color:   rgba(0, 0, 0, 0.8);
+    background-color:   rgba(0, 0, 0, 0.7);
     padding: 20px 0px;
 }
 .contenedor-productos-similares h2{
@@ -60,11 +60,13 @@ main{
    border-radius: 10px;
 }
 .productos-similares{
-    width: 15%;
+    width: 250px;
+    margin: auto;
     padding: 10px;
     background-color: whitesmoke;
     border: 2px solid #aaa;
     border-radius: 10px;
+    text-align: center;
 }
 
 .productos-similares:hover{
@@ -73,16 +75,25 @@ main{
     transition: 0.5s;
     background-color: #b0dfed;;
 }
-
+.productos-similares h3{
+    display: inline-block;
+}
 .productos-similares img{
     border: 1px solid black;
     border-radius: 8px;
+    width: 200px;
+    margin: auto;
 }
-#flex-productos{
+.flex-productos{
     display: flex;
     flex-direction: row;
     width: 100%;
     flex-wrap: nowrap;
     justify-content: space-around;
     margin: 15px auto;
+}
+.slider-prev::before, .slick-arrow::before{
+    color: #000;
+    background-color: rgb(34, 217, 241);
+    border-radius: 50%;
 }

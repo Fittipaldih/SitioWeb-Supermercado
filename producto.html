@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link href="css/estilo-general.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/estilo-producto.css">
     <title>Producto</title>
@@ -58,26 +60,45 @@
                 <form action="#" class="contenedor-btn-input">
                     <input type="number" min="1" max="50" name="cantidad-producto">
                     <input id="btn-agregar" type="submit" value="Agregar">
-                </div>
+                    </div>
             </article>
         </section>
+
         <section class="contenedor-productos-similares">
             <h2>Productos similares</h2>
-            <div id="flex-productos">
-            <article class="productos-similares">
-                <a href="producto.html"> <img src="img/AquariusPomelo.png" alt="AquariusPomelo"></a>
-                <h3>Titulo</h3>
-            </article>
-            <article class="productos-similares">
-                <a href="producto.html">    <img src="img/AquariosPera.png" alt="AquariusPomelo"> </a>
-                <h3>Titulo</h3>
-            </article>
-            <article class="productos-similares">
-                <a href="producto.html">  <img src="img/CepitaNaranja.png" alt="CepitaNaranja"> </a>
-                <h3>Titulo</h3>
-            </article>
-        </div>
+            
+            <div class="flex-productos">
+
+                <article class="productos-similares">
+                    <a href="producto.html"> <img src="img/AquariusPomelo.png" alt="AquariusPomelo"></a>
+                    <h3>Titulo</h3>
+                </article>
+
+                <article class="productos-similares">
+                    <a href="producto.html"> <img src="img/AquariosPera.png" alt="AquariusPomelo"> </a>
+                    <h3>Titulo</h3>
+                </article>
+
+                <article class="productos-similares">
+                    <a href="producto.html"> <img src="img/CepitaNaranja.png" alt="CepitaNaranja"> </a>
+                    <h3>Titulo</h3>
+                </article>
+                <article class="productos-similares">
+                    <a href="producto.html"> <img src="img/AquariosManzana.png" alt="CepitaNaranja"> </a>
+                    <h3>Titulo</h3>
+                </article>
+                <article class="productos-similares">
+                    <a href="producto.html"> <img src="img/cervezaBrahama.png" alt="CepitaNaranja"> </a>
+                    <h3>Titulo</h3>
+                </article>
+                <article class="productos-similares">
+                    <a href="producto.html"> <img src="img/CocaOriginal.png" alt="CepitaNaranja"> </a>
+                    <h3>Titulo</h3>
+                </article>
+            </div>
         </section>
+       
+
     </main>
     <footer class="PieDePagina">
 
@@ -112,6 +133,9 @@
             </a>
         </div>
     </footer>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/producto_slider.js"></script>
 </body>
 
 </html>
