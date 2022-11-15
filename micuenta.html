@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo-micuenta.css">
     <link rel="stylesheet" href="css/estilo-general.css">
+    <link rel="stylesheet" href="css/estilo-popup-micuenta.css">
     <title>Categorias</title>
 </head>
 
@@ -45,6 +46,103 @@
         </div>
     </header>
     <main>
+
+        <!-- POP UP AGREGAR DIRECCION-->
+        <dialog class="ventanaNuevaDireccion">
+        <div class="contenedor-posicion">
+            <form class="contenido" action="#">
+                <h2>Nueva dirección</h2>
+                <div class="container-input-label">
+                    <label for="Alias">Alias:</label>
+                    <input autofocus required type="text" name="Alias" placeholder="Alias">
+                </div>
+                <div class="container-input-label">
+                    <label for="">Provincia:</label>
+                    <select required name="Provincia">
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Córdoba</option>
+                        <option value="3">La Rioja</option>
+                        <option value="4">Salta</option>
+                        <option value="5">Jujuy</option>
+                        <option value="6">Entre Rios</option>
+                    </select>
+                </div>
+                <div class="container-input-label">
+                    <label for="">Localidad:</label>
+                    <select required name="Localidad" required>
+                        <option value="1">La Matanza</option>
+                        <option value="2">Quilmes</option>
+                        <option value="3">Morón</option>
+                        <option value="4">Berazategui</option>
+                        <option value="5">Avellaneda</option>
+                        <option value="6">Loma Hermosa</option>
+                    </select>
+                </div>
+                <div class="container-input-label">
+                    <label for="Dirección">Dirección:</label>
+                    <input type="text" placeholder="Dirección" name="Direccion" required>
+                </div>
+                <div class="container-input-label">
+                    <label for="Telefono">Télefono:</label>
+                    <input type="number" name="Telefono" placeholder="Tel" id="input-number:" required>
+                </div>
+                <div class="container-input-label">
+                    <label for="Piso">Piso:</label>
+                    <input type="number" name="Piso" placeholder="Piso" id="input-number" required>
+                    </div>
+                    <div class="container-input-label">
+                    <label for="Dto">Dto:</label>
+                    <input type="text" name="Dto" placeholder="Dto." required>
+                </div>
+    
+                <div class="contenedor-btn"> 
+                
+                    <input formnovalidate="" type="button" value="Volver" onclick="cerrarDireccion()">
+                
+                    <input type="submit" value="Confirmar" onclick="cerrarDireccion()">
+             </div>
+            </form>
+        </div>
+        </dialog>
+
+        <!-- POP UP AGREGAR TARJETA -->
+        <dialog class="ventanaNuevaTarjeta">
+            
+                <form action="#" class="contenido">
+                    <h2>Nueva tarjeta</h2>
+                    
+                    <div class="container-input-label">
+                        <label for="alias">Alias: </label>
+                        <input autofocus required type="text" id="alias" name="alias" placeholder="Alias">
+                    </div>
+        
+                    <div class="container-input-label">
+                        <label for="numero-tarjeta">Número tarjeta: </label>
+                        <input autocomplete="off" required type="number" placeholder= "Núm tarjeta" name="numero-tarjeta" id="numero-tarjeta"></div>
+        
+                    <div class="container-input-label">
+                        <label for="codigo">Código</label>
+                        <input required type="text" id="codigo" name="codigo" placeholder="Código"></div>
+        
+                    <div class="container-input-label">
+                        <label  for="vencimiento"> Vencimiento: </label>
+                        <input required type="date" id="vencimiento" name="vencimiento" placeholder="Vto."></div>
+        
+                    <div class="container-input-label">
+                        <label for="nombre-titular">Nombre titular:</label>
+                        <input required type="text" id="titular" placeholder="Nombre"name="nombre-titular">
+                    </div>
+        
+                    <div class="container-input-label"> 
+                        
+                        <input formnovalidate="" type="button" value="Volver" onclick="cerrarTarjeta()">
+                        
+                        <input type="submit" value="Confirmar" onclick="cerrarTarjeta()">
+                    </div>
+                </form>
+                
+        </dialog>
+
         <section>
             <article class="container_foto_nombre">
                 <div class="container_img_perfil"><img src="img/fotoperfilsilueta.webp" alt="foto_perfil"></div>
@@ -57,7 +155,7 @@
                 <div class="top_container_direcciones">
                     <h2>Mis direcciones</h2>
                     <div>
-                        <a href="direccion.html"> <button>Agregar</button> </a>
+                        <button onclick="abrirDireccion()"  >Agregar</button> </a>
                     </div>
                 </div>
                 <div class="tabla_direcciones-grid">
@@ -93,7 +191,7 @@
                 <div class="top_container_metodos">
                     <h2>Mis metodos de pago</h2>
                     <div>
-                        <a href="nueva-tarjeta.html"> <button>Agregar</button> </a> 
+                     <button onclick="abrirTarjeta()">Agregar</button> 
                     </div>
                 </div>
                 
@@ -140,6 +238,7 @@
             </a>
         </div>
     </footer>
+    <script src="js/micuenta.js"> </script>
 </body>
 
 </html>

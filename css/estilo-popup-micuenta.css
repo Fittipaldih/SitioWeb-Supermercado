@@ -1,0 +1,30 @@
+.contenido{
+    background-color: rgb(209, 241, 241);
+    padding: 10px ;
+}
+
+.container-input-label{
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+.container-input-label input{
+    padding: 5px 20px 5px 1px;
+    margin: 0px 5px;
+    justify-self: flex-end;
+    cursor: pointer;
+    width: 80px;
+    align-self: flex-end;
+}
+
+.container-input-label label{
+    align-self: center;
+    margin: 3px 2px;
+}
+
+.contenido h2{
+    margin:0px;
+    margin-bottom: 10px;
+    align-self: center;
+}

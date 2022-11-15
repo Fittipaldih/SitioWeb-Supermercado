@@ -71,7 +71,7 @@
                 <label for="rcontraseña">Repetir contraseña</label>
                 <input type="password" name="rcontraseña">
 
-                <p>¿Ya tenes cuenta? <a href="#" id="r-iniciarSesion">Iniciar sesion</a></p>
+                <p>¿Ya tenes cuenta? <a href="#" id="r-iniciarSesion" onclick="abrirPopUp(), cerrarRegistrarse()">Iniciar sesion</a></p>
 
                 <div class="botones">
                     <button id="btn-cancelar"onclick="cerrarRegistrarse()">Cancelar</button>
@@ -94,7 +94,7 @@
                 <a href="#" id="olvidaste-contraseña">¿Olvidaste tu contraseña?</a>
                 
                 <button id="submit">Login</button>
-                <p>¿No tenés cuenta? <a id="Registrarse"href="#" onclick="abrirRegistrarse()">Registrate</a></p>
+                <p>¿No tenés cuenta? <a id="Registrarse"href="#" onclick="abrirRegistrarse(), cerrarPopUp()">Registrate</a></p>
             </form>
         </dialog>
 
