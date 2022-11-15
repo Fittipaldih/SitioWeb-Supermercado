@@ -1,5 +1,6 @@
 .contenedor-carrito{
     display: flex;
+    margin-bottom: 62px;
 }
 .section-carrito{
     position: relative;
@@ -11,8 +12,7 @@
 .titulo-carrito{
     display: inline-block;
     font-size: 40px;
-   
-   
+ 
 }
 .contenedor-grid-carrito{
     display: grid;
