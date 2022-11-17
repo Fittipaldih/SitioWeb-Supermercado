@@ -32,7 +32,7 @@
              Dibuja todos los productos a partir de la base de datos.   */
             function renderizarProductos() {
                 baseDeDatos.forEach((info) => {
-
+                    DOMitems.classList.add("items");
                     // Estructura
                     const miNodo = document.createElement('div');
                     miNodo.classList.add('contenedor-img-producto-grid');
