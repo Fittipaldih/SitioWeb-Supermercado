@@ -165,8 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Boton de borrar
                     const miBoton = document.createElement('button');
                     miBoton.classList.add('btn-borrar');
-                    miBoton.textContent = 'Eliminar Producto';
-                    miBoton.style.marginLeft = '1rem';
+                    miBoton.textContent = 'Eliminar';
                     miBoton.dataset.item = item;
                     miBoton.addEventListener('click', borrarItemCarrito);
                     // Mezclamos nodos
