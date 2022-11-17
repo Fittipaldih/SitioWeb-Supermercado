@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/estilo-categorias.css">
     <link rel="stylesheet" href="css/estilo-general.css">
-    <title>Bebidas</title>
+    <link rel="stylesheet" href="css/estilo-carritos.css">
+    <title>Carrito</title>
 </head>
 <body>
 <header>
@@ -42,8 +43,7 @@
      <div class="ContenedorProductos">
      <section class="Productos">
     
-     <h2>Productos de Bebidas</h2>
-     
+        <h2>Carrito de compras</h2>
             <!-- Elementos generados a partir del JSON -->
             <div id="items"></div>
             <article class="listaProductosEnCarrito">
@@ -54,13 +54,14 @@
                 <!-- Precio total -->
                 <p class="TotalCarrito">Total: <span id="total"> </span> $.-</p>
 
-                <button id="boton-vaciar" class="botonVaciar">Limpiar carrito</button>
-                
+                <button id="boton-vaciar" class="botonVaciar">Vaciar carrito</button>
+                <button id="comprar">Realizar compra </button>
             </article>
-            <div class="contenedor-botones-categorias">
-                <a href="categorias.html"> <input type="submit" name="volver-a-categorias" class="volver-a-categorias" value="< Volver a Categorias"></a>
-                <a href="higiene2.0.html">  <input type="submit" name="siguiente-categoria" class="siguiente-categoria" value="Siguiente Categoria >"> </a>
-            </div>
+    
+    <div class="contenedor-botones-categorias">
+        <a href="categorias.html"> <input type="submit" name="volver-a-categorias" class="volver-a-categorias" value="< Volver a Categorias"></a>
+        <a href="index.html">  <input type="submit" name="siguiente-categoria" class="siguiente-categoria" value="Ir a Inicio >"> </a>
+    </div>
     
 </section>
 
@@ -93,7 +94,7 @@
         </a>
     </div>
     </footer>
-    <script src="js/bebidas.js"></script>
+    <script src="js/carrito.js"></script>
     <script src="js/carritoGeneral"></script>
 </body>
 </html>

@@ -115,7 +115,7 @@
 }
 
 .listaProductosEnCarrito p{
-    background-color: #eee;
+    background-color: #fff;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -129,12 +129,19 @@
     margin: 10px 40px;
 
 }
-.botonVaciar{
-    display: flex;
-    padding: 10px 100px;
+.botonVaciar, #comprar{
+    display: inline-block;
+    padding: 10px 75px;
     margin: 0px 10px;
     border-radius: 5px;
-    
+    background-color: rgb(240, 237, 237);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.botonVaciar:hover, #comprar:hover{
+    background-color: rgb(222, 221, 221);
 }
 
 .Productos {

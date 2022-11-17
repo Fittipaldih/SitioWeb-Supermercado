@@ -1,0 +1,13 @@
+#items{
+    display: none
+}
+
+.listaProductosEnCarrito{
+    width: 90%;
+
+}
+
+.listaProductosEnCarrito p{
+  font-size: 20px;
+  text-align: center;
+}
