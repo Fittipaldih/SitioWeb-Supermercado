@@ -285,7 +285,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     background-color: none;
     color: red;
     position: absolute;
-    left: 300px;
+    left: 290px;
     top: 10px;
 }
 .formulario-iniciar-sesion{
@@ -334,10 +334,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
 #btn-guardar{
     padding: 5px 10px;
 }
-
-
-
-
-
-
-
+#ErroresAlRegistrarse{
+    color: red;
+    font-size: large;
+}

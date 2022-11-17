@@ -190,3 +190,11 @@
     top: 80%;
     left: 101%;
 }
+#erroresAgregarDireccion{
+    color:red;
+    font-size: large;
+}
+
+#boton-agregar-metodos-pago{
+    padding:3px 8px;
+}
