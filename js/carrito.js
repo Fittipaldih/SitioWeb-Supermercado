@@ -1,15 +1,4 @@
-    var carrito = new Carrito();
-    
-    document.addEventListener('DOMContentLoaded',function(){ 
-        // detectamos cuando se carga la pagina y creamos el carrito vacio
-        if(!localStorage.getItem("carrito")){
-            localStorage.setItem('carrito','[]');
-        }
-
-    });
-
-
-    let listaProductosAlmacen = 
+    const listaProductosAlmacen = 
         [{id:'almacen_producto1',nombre:'aceite',precio:700,imagen:'#'},
          {id:'almacen_producto2',nombre:'vinagre',precio:250,imagen:'#' }, 
          {id:'almacen_producto3',nombre:'cafe',precio:1055,imagen:'#' }, 
@@ -27,7 +16,7 @@
          {id:'almacen_producto15',nombre:'playadito',precio:750,imagen:'#' }      
           ]
    
-    let listaProductosBebidas = 
+    const listaProductosBebidas = 
           [{id:'bebida_producto1',nombre:'7up',precio:457,imagen:'#'},
            {id:'bebida_producto2',nombre:'AquariusManzana',precio:350,imagen:'#' }, 
            {id:'bebida_producto3',nombre:'Aquarius Pera',precio:340,imagen:'#' }, 
@@ -45,7 +34,7 @@
            {id:'bebida_producto15',nombre:'Trumpeter',precio:1740,imagen:'#' }      
             ]
 
-    let listaProductosHigiene = 
+    const listaProductosHigiene = 
             [{id:'higiene_producto1',nombre:'Alcohol',precio:472,imagen:'#'},
              {id:'higiene_producto2',nombre:'Algodon',precio:879,imagen:'#' }, 
              {id:'higiene_producto3',nombre:'Ayudin',precio:460,imagen:'#' }, 
@@ -59,7 +48,7 @@
              {id:'higiene_producto11',nombre:'Sensodyne',precio:605,imagen:'#' }
         ]
 
-    let listaProductosTecnologia = 
+    const listaProductosTecnologia = 
         [{id:'tecnologia_producto1',nombre:'Iphone',precio:24500,imagen:'#'},
          {id:'tecnologia_producto2',nombre:'LG',precio:4500,imagen:'#' }, 
          {id:'tecnologia_producto3',nombre:'Mouse',precio:190,imagen:'#' }, 
@@ -67,7 +56,7 @@
          {id:'tecnologia_producto5',nombre:'Samsung',precio:22900,imagen:'#' }, 
          {id:'tecnologia_producto6',nombre:'Xiaomi',precio:9800,imagen:'#' }] 
 
-    let listaProductosFruta = 
+    const listaProductosFruta = 
          [{id:'frutas_producto1',nombre:'Banana',precio:350,imagen:'#'},
           {id:'frutas_producto2',nombre:'Limon',precio:200,imagen:'#' }, 
           {id:'frutas_producto3',nombre:'Kiwi',precio:500,imagen:'#' }, 
@@ -75,7 +64,7 @@
           {id:'frutas_producto5',nombre:'Manzana',precio:250,imagen:'#' }, 
           {id:'frutas_producto6',nombre:'Palta',precio:500,imagen:'#' }] 
     
-    let listaProductosLacteos = 
+    const listaProductosLacteos = 
           [{id:'lacteos_producto1',nombre:'Danica',precio:510,imagen:'#'},
            {id:'lacteos_producto2',nombre:'LecheSerenisima',precio:310,imagen:'#' }, 
            {id:'lacteos_producto3',nombre:'LecheTresNiñas',precio:280,imagen:'#' }, 
@@ -83,18 +72,29 @@
            {id:'lacteos_producto5',nombre:'Yogur',precio:410,imagen:'#' }, 
            {id:'lacteos_producto6',nombre:'Ser',precio:100,imagen:'#' }]
 
-     function agregarItem(){
 
-         let precio = document.getElementById("almacen_producto1_precio").value
+    agregarAlCarrito.addEventListener("click",()=>{
+        var productoAAgregarAlCarrito = document.getElementsByClas
+        var btnAgregar = document.getElementByClas("addToCart")
         carrito.push()
-         }
+    });
             
+    var carrito = new Carrito();
+    
+    document.addEventListener('DOMContentLoaded',function(){ 
+        // detectamos cuando se carga la pagina y creamos el carrito vacio
+        if(!localStorage.getItem("carrito")){
+            localStorage.setItem('carrito','[]');
+        }
+
+    });   
+    
+
+    /* LOCAL STORAGE LOS ALMACENA COMO STRING, uso esto para convertir este array de datos de json en string  */
+    localStorage.setItem("carrito", JSON.stringify(productos)) 
             
-            /* LOCAL STORAGE LOS ALMACENA COMO STRING, uso esto para convertir este array de datos de json en string  */
-            localStorage.setItem("listaProductos", JSON.stringify(productos)) 
-            
-            /*Obtener bojeto */
-            let productosObtenido=JSON.parse(localStorage.getItem("listaProductos"));
+    /*Obtener bojeto */
+    let productosObtenido=JSON.parse(localStorage.getItem("listaProductos"));
 
 // esto sirve para el boton agregar o eliminar del carrito
             const agregar=document.querySelector("#agregar");
