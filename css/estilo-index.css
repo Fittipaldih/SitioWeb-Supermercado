@@ -285,7 +285,7 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
     background-color: none;
     color: red;
     position: absolute;
-    left: 340px;
+    left: 300px;
     top: 10px;
 }
 .formulario-iniciar-sesion{
