@@ -49,98 +49,105 @@
 
         <!-- POP UP AGREGAR DIRECCION-->
         <dialog class="ventanaNuevaDireccion">
-        <div class="contenedor-posicion">
-            <form class="contenido" action="#">
+            <div class="contenedor-posicion">
                 <h2>Nueva dirección</h2>
-                <div class="container-input-label">
-                    <label for="Alias">Alias:</label>
-                    <input autofocus required type="text" name="Alias" placeholder="Alias">
-                </div>
-                <div class="container-input-label">
-                    <label for="">Provincia:</label>
-                    <select required name="Provincia">
-                        <option value="1">Buenos Aires</option>
-                        <option value="2">Córdoba</option>
-                        <option value="3">La Rioja</option>
-                        <option value="4">Salta</option>
-                        <option value="5">Jujuy</option>
-                        <option value="6">Entre Rios</option>
-                    </select>
-                </div>
-                <div class="container-input-label">
-                    <label for="">Localidad:</label>
-                    <select required name="Localidad" required>
-                        <option value="1">La Matanza</option>
-                        <option value="2">Quilmes</option>
-                        <option value="3">Morón</option>
-                        <option value="4">Berazategui</option>
-                        <option value="5">Avellaneda</option>
-                        <option value="6">Loma Hermosa</option>
-                    </select>
-                </div>
-                <div class="container-input-label">
-                    <label for="Dirección">Dirección:</label>
-                    <input type="text" placeholder="Dirección" name="Direccion" required>
-                </div>
-                <div class="container-input-label">
-                    <label for="Telefono">Télefono:</label>
-                    <input type="number" name="Telefono" placeholder="Tel" id="input-number:" required>
-                </div>
-                <div class="container-input-label">
-                    <label for="Piso">Piso:</label>
-                    <input type="number" name="Piso" placeholder="Piso" id="input-number" required>
+                <form class="contenido" action="#" id="formulario-direccion" onsubmit="validarDireccion()">
+                    <div class="container-input-label">
+                        <label for="Alias">Alias:</label>
+                        <input type="text" name="Alias" placeholder="Alias" autofocus required>
                     </div>
                     <div class="container-input-label">
-                    <label for="Dto">Dto:</label>
-                    <input type="text" name="Dto" placeholder="Dto." required>
-                </div>
-    
-                <div class="contenedor-btn"> 
-                
-                    <input formnovalidate="" type="button" value="Volver" onclick="cerrarDireccion()">
-                
-                    <input type="submit" value="Confirmar" onclick="cerrarDireccion()">
-             </div>
-            </form>
-        </div>
+                        <label for="">Provincia:</label>
+                        <select required name="Provincia" id="selectProvincia">
+                            <option value="0">-- Provincia --</option>
+                            <option value="1">Buenos Aires</option>
+                            <option value="2">Córdoba</option>
+                            <option value="3">La Rioja</option>
+                            <option value="4">Salta</option>
+                            <option value="5">Jujuy</option>
+                            <option value="6">Entre Rios</option>
+                        </select>
+                    </div>
+                    <div class="container-input-label">
+                        <label for="">Localidad:</label>
+                        <select required name="Localidad" id="selectLocalidad"required>
+                            <option value="0">-- Localidad --</option>
+                            <option value="1">La Matanza</option>
+                            <option value="2">Quilmes</option>
+                            <option value="3">Morón</option>
+                            <option value="4">Berazategui</option>
+                            <option value="5">Avellaneda</option>
+                            <option value="6">Loma Hermosa</option>
+                        </select>
+                    </div>
+                    <div class="container-input-label">
+                        <label for="Dirección">Dirección:</label>
+                        <input type="text" name="Direccion" placeholder="Dirección" required>
+                    </div>
+                    <div class="container-input-label">
+                        <label for="Telefono">Télefono:</label>
+                        <input type="number" name="Telefono" placeholder="Tel" id="input-number:" required>
+                    </div>
+                    <div class="container-input-label">
+                        <label for="Piso">Piso:</label>
+                        <input type="number" name="Piso" placeholder="Piso" id="input-number" required>
+                    </div>
+                    <div class="container-input-label">
+                        <label for="Dto">Dto:</label>
+                        <input type="text" name="Dto" placeholder="Dto." required>
+                    </div>
+
+                    <div class="container-botones">
+                        <input formnovalidate="" type="button" value="Volver" onclick="cerrarDireccion()">
+                        <input type="submit" value="Confirmar" id="btn-submit">
+                    </div>
+
+                    <div id="erroresAgregarDireccion"></div>
+                </form>
+            </div>
         </dialog>
 
         <!-- POP UP AGREGAR TARJETA -->
         <dialog class="ventanaNuevaTarjeta">
-            
-                <form action="#" class="contenido">
-                    <h2>Nueva tarjeta</h2>
-                    
-                    <div class="container-input-label">
-                        <label for="alias">Alias: </label>
-                        <input autofocus required type="text" id="alias" name="alias" placeholder="Alias">
-                    </div>
-        
-                    <div class="container-input-label">
-                        <label for="numero-tarjeta">Número tarjeta: </label>
-                        <input autocomplete="off" required type="number" placeholder= "Núm tarjeta" name="numero-tarjeta" id="numero-tarjeta"></div>
-        
-                    <div class="container-input-label">
-                        <label for="codigo">Código</label>
-                        <input required type="text" id="codigo" name="codigo" placeholder="Código"></div>
-        
-                    <div class="container-input-label">
-                        <label  for="vencimiento"> Vencimiento: </label>
-                        <input required type="date" id="vencimiento" name="vencimiento" placeholder="Vto."></div>
-        
-                    <div class="container-input-label">
-                        <label for="nombre-titular">Nombre titular:</label>
-                        <input required type="text" id="titular" placeholder="Nombre"name="nombre-titular">
-                    </div>
-        
-                    <div class="container-input-label"> 
-                        
-                        <input formnovalidate="" type="button" value="Volver" onclick="cerrarTarjeta()">
-                        
-                        <input type="submit" value="Confirmar" onclick="cerrarTarjeta()">
-                    </div>
-                </form>
-                
+
+            <h2>Nueva tarjeta</h2>
+            <form action="#" class="contenido" id="form-tarjeta">
+
+                <div class="container-input-label">
+                    <label for="alias">Alias: </label>
+                    <input autofocus required type="text" id="alias" name="alias" placeholder="Alias">
+                </div>
+
+                <div class="container-input-label">
+                    <label for="numero-tarjeta">Número tarjeta: </label>
+                    <input autocomplete="off" required type="number" placeholder="Núm tarjeta" name="numero-tarjeta"
+                        id="numero-tarjeta">
+                </div>
+
+                <div class="container-input-label">
+                    <label for="codigo">Código</label>
+                    <input required type="text" id="codigo" name="codigo" placeholder="Código">
+                </div>
+
+                <div class="container-input-label">
+                    <label for="vencimiento"> Vencimiento: </label>
+                    <input required type="date" id="vencimiento" name="vencimiento" placeholder="Vto.">
+                </div>
+
+                <div class="container-input-label">
+                    <label for="nombre-titular">Nombre titular:</label>
+                    <input required type="text" id="titular" placeholder="Nombre" name="nombre-titular">
+                </div>
+
+                <div class="container-botones">
+
+                    <input formnovalidate="" type="button" value="Volver" onclick="cerrarTarjeta()">
+
+                    <input type="submit" value="Confirmar">
+                </div>
+                <div id="erroresNuevaTarjeta"></div>
+            </form>
+
         </dialog>
 
         <section>
@@ -155,7 +162,7 @@
                 <div class="top_container_direcciones">
                     <h2>Mis direcciones</h2>
                     <div>
-                        <button onclick="abrirDireccion()"  >Agregar</button> </a>
+                        <button onclick="abrirDireccion()">Agregar</button> </a>
                     </div>
                 </div>
                 <div class="tabla_direcciones-grid">
@@ -178,31 +185,51 @@
                         <p>xxxxxxxxxxxxxxx</p>
                     </div>
                 </div>
-                <a href="#"> 
-                    <svg id="eliminar1" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z">
-                        </path></svg>
+                <a href="#">
+                    <svg id="eliminar1" viewBox="0 0 24 24">
+                        <path
+                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                        </path>
+                        <path d="M9 10h2v8H9zm4 0h2v8h-2z">
+                        </path>
+                    </svg>
                 </a> <a href="#">
-                    <svg id="eliminar2" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z">
-                        </path></svg></a>
+                    <svg id="eliminar2" viewBox="0 0 24 24">
+                        <path
+                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                        </path>
+                        <path d="M9 10h2v8H9zm4 0h2v8h-2z">
+                        </path>
+                    </svg></a>
             </article>
-            
+
 
             <div class="container_metodos_de_pago">
                 <div class="top_container_metodos">
                     <h2>Mis metodos de pago</h2>
                     <div>
-                     <button onclick="abrirTarjeta()">Agregar</button> 
+                        <button onclick="abrirTarjeta()" id="boton-agregar-metodos-pago">Agregar</button>
                     </div>
                 </div>
-                
-                    <div class="tabla_metodos_de_pago">
-                        <h3>Alias</h3>
-                        <p>Debito VISA</p>
-                        <p>LemonCash</p>
-                    </div>
-                        <a href="#"><svg id="eliminar3" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg></a>
-                       <a href="#"><svg id="eliminar4" viewBox="0 0 24 24"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg></a>
-            </article>
+
+                <div class="tabla_metodos_de_pago">
+                    <h3>Alias</h3>
+                    <p>Debito VISA</p>
+                    <p>LemonCash</p>
+                </div>
+                <a href="#"><svg id="eliminar3" viewBox="0 0 24 24">
+                        <path
+                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                        </path>
+                        <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                    </svg></a>
+                <a href="#"><svg id="eliminar4" viewBox="0 0 24 24">
+                        <path
+                            d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z">
+                        </path>
+                        <path d="M9 10h2v8H9zm4 0h2v8h-2z"></path>
+                    </svg></a>
+                </article>
         </section>
     </main>
     <footer class="PieDePagina">

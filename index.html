@@ -54,29 +54,30 @@
         <!--Ventana pop up registrarse-->
         <dialog class="ventanaRegistrarse">
             <h2 id="registrarse-titulo">Registrarse</h2>
-            <form id="formulario-registrarse">
+            <form id="formulario-registrarse" method="post">
 
                 <label for="email">Email</label>
-                <input type="text" name="email" placeholder="Ingrese email">
+                <input type="text" name="email" placeholder="Ingrese email" id="registrarseEmail">
 
                 <label for="Nombre">Nombre</label>
-                <input type="text" name="nombre" placeholder="Ingrese usuario">
+                <input type="text" name="nombre" placeholder="Ingrese usuario" required>
 
                 <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" placeholder="Ingrese apellido" >
+                <input type="text" name="apellido" placeholder="Ingrese apellido" required>
 
                 <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña" placeholder="Ingrese contraseña">
+                <input type="password" name="contraseña" placeholder="Ingrese contraseña" id="contraseña1">
 
                 <label for="rcontraseña">Repetir contraseña</label>
-                <input type="password" name="rcontraseña">
+                <input type="password" name="rcontraseña" id="contraseña2">
 
                 <p>¿Ya tenes cuenta? <a href="#" id="r-iniciarSesion" onclick="abrirPopUp(), cerrarRegistrarse()">Iniciar sesion</a></p>
 
                 <div class="botones">
                     <button id="btn-cancelar"onclick="cerrarRegistrarse()">Cancelar</button>
-                    <button id="btn-guardar">Guardar</button>
+                    <button type="submit" id="btn-guardar">Guardar</button>
                 </div>
+                <div id="ErroresAlRegistrarse"></div>
             </form>
         </dialog>
         
