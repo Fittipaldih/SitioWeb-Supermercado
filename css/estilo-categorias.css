@@ -147,7 +147,26 @@
     padding-top: 8px;
     border-radius: 10px;
     max-width: 230px;
+    width: 155px;
+    height: 190px;
     position: relative;
+}
+
+
+.btn{
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid rgb(95, 93, 93);
+    font-weight: 700;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #555757;
+    color: #eee;
 }
 
  .precio-producto{
@@ -197,6 +216,7 @@
     border-radius: 8px;
     border: 1px solid rgb(199, 198, 198);
     transition: 0.5s;
+    width: 135px;
 }
 .contenedor-titulo-input-carrito input{
     width: 37px;
