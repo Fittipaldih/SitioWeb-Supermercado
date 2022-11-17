@@ -10,11 +10,11 @@
 }
 
 .container-input-label input{
-    padding: 5px 20px 5px 1px;
+    padding: 5px 10px;
     margin: 0px 5px;
     justify-self: flex-end;
     cursor: pointer;
-    width: 80px;
+    width: 40%;
     align-self: flex-end;
 }
 
@@ -28,3 +28,16 @@
     margin-bottom: 10px;
     align-self: center;
 }
+.ventanaNuevaDireccion, .ventanaNuevaTarjeta{
+    width: 30%;
+}
+.container-botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-botones input{
+    padding: 10px 10px;
+}
+
+
