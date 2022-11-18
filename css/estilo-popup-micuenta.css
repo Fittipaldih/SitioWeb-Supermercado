@@ -39,5 +39,9 @@
 .container-botones input{
     padding: 10px 10px;
 }
-
+#erroresNuevaTarjeta{
+    color: red;
+    font-size: large;
+    font-weight: 400;
+}
 

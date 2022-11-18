@@ -52,6 +52,24 @@ function contraseñasIguales(){
     if(error){
         document.querySelector("#ErroresAlRegistrarse").innerHTML=mensajeDeError;
     }else{
+        guardarUsuario();
         formRegistrarse.submit();
     }
+}
+const email = document.querySelector("#registrarseEmail");
+const nombre = document.querySelector("#nombre")
+const apellido = document.getElementById("apellido");
+const contraseña1 = document.getElementById("contraseña1");
+
+function guardarUsuario(){
+const usuario =[
+    {
+    "email": email.value,
+    "nombre": nombre.value,
+    "apellido": apellido.value,
+    "contraseña1": contraseña1.value,    
+    }
+]
+let MiUsuario = JSON.stringify(usuario);
+localStorage.setItem("MiUsuario",MiUsuario)
 }

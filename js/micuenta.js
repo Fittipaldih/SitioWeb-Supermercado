@@ -40,7 +40,7 @@ function validarDireccion(){
     const direccion=document.getElementsByName("Direccion");
     const provincia = document.getElementById("selectProvincia")
     const localidad= document.getElementById("selectLocalidad");
-    const telefono = document.getElementsByName("Telefono");
+    const telefono = document.getElementById("Telefono");
     const piso = document.getElementsByName("Piso");
     const departamento = document.getElementsByName("Dto");
     
@@ -72,3 +72,51 @@ function validarDireccion(){
         form.submit();
     }
 }
+
+// formulario metodos de pago
+
+const formTarjeta = document.querySelector("#form-tarjeta");
+
+formTarjeta.addEventListener("submit", (e) => {
+    e.preventDefault();
+    validarTarjeta();
+});
+
+function validarTarjeta() {
+
+    let numTarjeta = document.getElementById("numero-tarjeta");
+
+    let error = false;
+
+    let mensajesError = '';
+    let sumaValores = 0;
+    let arrayTarjeta = numTarjeta.value.toString().split("");
+    console.log(arrayTarjeta);
+
+    for (i = 0; i < arrayTarjeta.length-1; i++) {
+        let numero = parseInt(arrayTarjeta[i])
+        sumaValores += numero
+    }
+    console.log(sumaValores);
+console.log(arrayTarjeta.length);
+    if (arrayTarjeta.length != 10) {
+        error = true;
+        mensajesError += " <p>Cantidad de caracteres incorrectos</p>"
+    } else {
+
+        if ((!(arrayTarjeta[9]) % 2 == 0 && sumaValores % 2 == 1) || (!(arrayTarjeta[9]) % 2 == 1 && sumaValores % 2 == 0)) {
+                error = true
+                mensajesError += "<p>El numero de tarjeta no es valido</p>"
+            } 
+    }
+    if (error) {
+        document.querySelector("#erroresNuevaTarjeta").innerHTML = mensajesError;
+        } else {
+            formTarjeta.submit();
+    }
+}
+
+
+
+
+
