@@ -5,79 +5,76 @@ document.addEventListener('DOMContentLoaded', () => {
         const baseDeDatos = 
 
         // PRODUCTOS ALMACEN
-        [{id: 1 , nombre:'Aceite',  precio: 700, imagen:src="img/aceiteCocinero.png"},
-        {id:  2 ,nombre:'Vinagre',  precio:250, imagen:src="img/vinagre.png" }, 
-        {id:  3 ,nombre:'Cafe',     precio:1055,imagen:src="img/cafeVirginia.png"}, 
-        {id:  4 ,nombre:'Doritos',  precio:458,imagen:src="img/Doritos.png"}, 
-        {id:  5 ,nombre:'Lays',     precio:420,imagen:src="img/papasLays.png"}, 
-        {id:  6 ,nombre:'Milkauot', precio:790,imagen:src="img/dulceMilkaut.png"}, 
-        {id:  7 ,nombre:'Harina',   precio:205,imagen:src="img/harina.png"}, 
-        {id:  8 ,nombre:'Kitkat',  precio:189,imagen: src="img/kitkat.png"}, 
-        {id:  9 ,nombre:'Hellmans', precio:390,imagen:src="img/mayonesa.png"}, 
-        {id: 10 ,nombre:'Natura',  precio:385,imagen:src="img/ketchup.png"}, 
-        {id: 11 ,nombre:'Savora',  precio:380,imagen:src="img/savora.png"}, 
-        {id: 12 ,nombre:'Mermelada', precio:585,imagen: src="img/mermelada.png"}, 
-        {id: 13 ,nombre:'Oreo',    precio:212,imagen:src="img/oreo.png"}, 
-        {id: 14 ,nombre:'Bimbo',   precio:455,imagen:src="img/panBimbo.png"}, 
-        {id: 15 ,nombre:'Playadito', precio:750,imagen:src="img/yerbaPlayadito.png"},
+        [{id: 1 ,categoria: 'almacen', nombre:'Aceite',  precio: 700, imagen:src="img/aceiteCocinero.png"},
+        {id:  2 ,categoria: 'almacen',nombre:'Vinagre',  precio:250, imagen:src="img/vinagre.png" }, 
+        {id:  3 ,categoria: 'almacen',nombre:'Cafe',     precio:1055,imagen:src="img/cafeVirginia.png"}, 
+        {id:  4 ,categoria: 'almacen',nombre:'Doritos',  precio:458,imagen:src="img/Doritos.png"}, 
+        {id:  5 ,categoria: 'almacen',nombre:'Lays',     precio:420,imagen:src="img/papasLays.png"}, 
+        {id:  6 ,categoria: 'almacen',nombre:'Milkauot', precio:790,imagen:src="img/dulceMilkaut.png"}, 
+        {id:  7 ,categoria: 'almacen',nombre:'Harina',   precio:205,imagen:src="img/harina.png"}, 
+        {id:  8 ,categoria: 'almacen',nombre:'Kitkat',  precio:189,imagen: src="img/kitkat.png"}, 
+        {id:  9 ,categoria: 'almacen',nombre:'Hellmans', precio:390,imagen:src="img/mayonesa.png"}, 
+        {id: 10 ,categoria: 'almacen',nombre:'Natura',  precio:385,imagen:src="img/ketchup.png"}, 
+        {id: 11 ,categoria: 'almacen',nombre:'Savora',  precio:380,imagen:src="img/savora.png"}, 
+        {id: 12 ,categoria: 'almacen',nombre:'Mermelada', precio:585,imagen: src="img/mermelada.png"}, 
+        {id: 13 ,categoria: 'almacen',nombre:'Oreo',    precio:212,imagen:src="img/oreo.png"}, 
+        {id: 14 ,categoria: 'almacen',nombre:'Bimbo',   precio:455,imagen:src="img/panBimbo.png"}, 
+        {id: 15 ,categoria: 'almacen',nombre:'Playadito', precio:750,imagen:src="img/yerbaPlayadito.png"},
 
         // PRODUCTOS BEBIDAS
-        {id: 16 ,nombre:'7up',precio:457,imagen: src="img/7up.png"},
-        {id: 17 ,nombre:'AquariusM',precio:350,imagen:src="img/AquariosManzana.png"}, 
-        {id: 18 ,nombre:'AquariusPe',precio:340,imagen:src="img/AquariosPera.png"}, 
-        {id: 19 ,nombre:'AquariusPo',precio:346,imagen:src="img/AquariusPomelo.png"}, 
-        {id: 20 ,nombre:'Bombay',precio:5900,imagen:src="img/bombay.png"}, 
-        {id: 21 ,nombre:'Cepita M',precio:332,imagen:src="img/cepitaMulti.png"}, 
-        {id: 22 ,nombre:'Cepita N',precio:340,imagen:src="img/CepitaNaranja.png"}, 
-        {id: 23 ,nombre:'Brahma',precio:310,imagen:src="img/cervezaBrahama.png"}, 
-        {id: 24 ,nombre:'CocaCola',precio:480,imagen:src="img/CocaOriginal.png"}, 
-        {id: 25 ,nombre:'CocaZero',precio:475,imagen:src="img/CocaSinAzucar.png"}, 
-        {id: 26 ,nombre:'Fernet',precio:1510,imagen:src="img/fernetBuhero.png"}, 
-        {id: 27 ,nombre:'PoweradeA',precio:207,imagen:src="img/PoweradeCeleste.png"}, 
-        {id: 28 ,nombre:'PoweradeR',precio:207,imagen:src="img/PoweradeRojo.png"}, 
-        {id: 29 ,nombre:'Pritty',precio:310,imagen:src="img/pritty.png"}, 
-        {id: 30 ,nombre:'Trumpeter',precio:1740,imagen:src="img/trumpeter.png"},
+        {id: 16 ,categoria: 'bebidas', nombre:'7up',precio:457,imagen: src="img/7up.png"},
+        {id: 17 ,categoria: 'bebidas', nombre:'AquariusM',precio:350,imagen:src="img/AquariosManzana.png"}, 
+        {id: 18 ,categoria: 'bebidas', nombre:'AquariusPe',precio:340,imagen:src="img/AquariosPera.png"}, 
+        {id: 19 ,categoria: 'bebidas', nombre:'AquariusPo',precio:346,imagen:src="img/AquariusPomelo.png"}, 
+        {id: 20 ,categoria: 'bebidas', nombre:'Bombay',precio:5900,imagen:src="img/bombay.png"}, 
+        {id: 21 ,categoria: 'bebidas', nombre:'Cepita M',precio:332,imagen:src="img/cepitaMulti.png"}, 
+        {id: 22 ,categoria: 'bebidas', nombre:'Cepita N',precio:340,imagen:src="img/CepitaNaranja.png"}, 
+        {id: 23 ,categoria: 'bebidas', nombre:'Brahma',precio:310,imagen:src="img/cervezaBrahama.png"}, 
+        {id: 24 ,categoria: 'bebidas', nombre:'CocaCola',precio:480,imagen:src="img/CocaOriginal.png"}, 
+        {id: 25 ,categoria: 'bebidas', nombre:'CocaZero',precio:475,imagen:src="img/CocaSinAzucar.png"}, 
+        {id: 26 ,categoria: 'bebidas', nombre:'Fernet',precio:1510,imagen:src="img/fernetBuhero.png"}, 
+        {id: 27 ,categoria: 'bebidas', nombre:'PoweradeA',precio:207,imagen:src="img/PoweradeCeleste.png"}, 
+        {id: 28 ,categoria: 'bebidas', nombre:'PoweradeR',precio:207,imagen:src="img/PoweradeRojo.png"}, 
+        {id: 29 ,categoria: 'bebidas', nombre:'Pritty',precio:310,imagen:src="img/pritty.png"}, 
+        {id: 30 ,categoria: 'bebidas', nombre:'Trumpeter',precio:1740,imagen:src="img/trumpeter.png"},
 
         //PRODUCTOS FRUTAS
-        {id: 48 ,nombre:'Banana',precio:350,imagen:src="img/banana.png"},
-        {id: 49 ,nombre:'Limon',precio:200,imagen:src="img/limon.png"}, 
-        {id: 50 ,nombre:'Kiwi',precio:500,imagen:src="img/kiwi.png"}, 
-        {id: 51 ,nombre:'Mandarina',precio:250,imagen:src="img/mandarina.png"}, 
-        {id: 52 ,nombre:'Manzana',precio:250,imagen:src="img/manzana.png"}, 
-        {id: 53 ,nombre:'Palta',precio:500,imagen:src="img/palta.png"},
+        {id: 48 ,categoria: 'frutas',nombre:'Banana',precio:350,imagen:src="img/banana.png"},
+        {id: 49 ,categoria: 'frutas',nombre:'Limon',precio:200,imagen:src="img/limon.png"}, 
+        {id: 50 ,categoria: 'frutas',nombre:'Kiwi',precio:500,imagen:src="img/kiwi.png"}, 
+        {id: 51 ,categoria: 'frutas',nombre:'Mandarina',precio:250,imagen:src="img/mandarina.png"}, 
+        {id: 52 ,categoria: 'frutas',nombre:'Manzana',precio:250,imagen:src="img/manzana.png"}, 
+        {id: 53 ,categoria: 'frutas',nombre:'Palta',precio:500,imagen:src="img/palta.png"},
     
         // PRODUCTOS HIGIENE
-        {id: 31 ,nombre:'Alcohol',precio:472,imagen: src="img/alcoholetilico.png"},
-        {id: 32 ,nombre:'Algodon',precio:879,imagen:src="img/algodon.png"}, 
-        {id: 33 ,nombre:'Ayudin',precio:460,imagen:src="img/ayudin.png"}, 
-        {id: 34 ,nombre:'Dermaglos',precio:1050,imagen:src="img/dermaglos.png"}, 
-        {id: 35 ,nombre:'Elvive',precio:465,imagen:src="img/Elvive.png"}, 
-        {id: 36 ,nombre:'Eucerin',precio:3580,imagen:src="img/Eucerin.png"}, 
-        {id: 37 ,nombre:'Finish',precio:1045,imagen:src="img/Finish.png"}, 
-        {id: 38 ,nombre:'Higienol',precio:684,imagen:src="img/Higienol.png"}, 
-        {id: 39 ,nombre:'Magistral',precio:1059,imagen:src="img/Magistral.png"}, 
-        {id: 40 ,nombre:'Cif',precio:480,imagen:src="img/Cif.png"}, 
-        {id: 41 ,nombre:'Sensodyne',precio:605,imagen:src="img/Sensodyne.png"},
+        {id: 31 ,categoria: 'higiene y limpieza',nombre:'Alcohol',precio:472,imagen: src="img/alcoholetilico.png"},
+        {id: 32 ,categoria: 'higiene y limpieza',nombre:'Algodon',precio:879,imagen:src="img/algodon.png"}, 
+        {id: 33 ,categoria: 'higiene y limpieza',nombre:'Ayudin',precio:460,imagen:src="img/ayudin.png"}, 
+        {id: 34 ,categoria: 'higiene y limpieza',nombre:'Dermaglos',precio:1050,imagen:src="img/dermaglos.png"}, 
+        {id: 35 ,categoria: 'higiene y limpieza',nombre:'Elvive',precio:465,imagen:src="img/Elvive.png"}, 
+        {id: 36 ,categoria: 'higiene y limpieza',nombre:'Eucerin',precio:3580,imagen:src="img/Eucerin.png"}, 
+        {id: 37 ,categoria: 'higiene y limpieza',nombre:'Finish',precio:1045,imagen:src="img/Finish.png"}, 
+        {id: 38 ,categoria: 'higiene y limpieza',nombre:'Higienol',precio:684,imagen:src="img/Higienol.png"}, 
+        {id: 39 ,categoria: 'higiene y limpieza',nombre:'Magistral',precio:1059,imagen:src="img/Magistral.png"}, 
+        {id: 40 ,categoria: 'higiene y limpieza',nombre:'Cif',precio:480,imagen:src="img/Cif.png"}, 
+        {id: 41 ,categoria: 'higiene y limpieza',nombre:'Sensodyne',precio:605,imagen:src="img/Sensodyne.png"},
 
         //PRODUCTOS LACTEOS
-        {id: 54 ,nombre:'Danica',precio:510,imagen:src="img/danica.png"},
-        {id: 55 ,nombre:'LecheSer',precio:310,imagen:src="img/lecheSerenisima.png"}, 
-        {id: 56 ,nombre:'LecheTres',precio:280,imagen:src="img/lecheTresNiñas.png"}, 
-        {id: 57 ,nombre:'Manteca',precio:350,imagen:src="img/manteca.png"}, 
-        {id: 58 ,nombre:'Yogur',precio:410,imagen:src="img/yogurisimo.png"}, 
-        {id: 59 ,nombre:'Ser',precio:100,imagen:src="img/yogurSer.png"},
+        {id: 54 ,categoria: 'lacteos', nombre:'Danica',precio:510,imagen:src="img/danica.png"},
+        {id: 55 ,categoria: 'lacteos', nombre:'LecheSer',precio:310,imagen:src="img/lecheSerenisima.png"}, 
+        {id: 56 ,categoria: 'lacteos', nombre:'LecheTres',precio:280,imagen:src="img/lecheTresNiñas.png"}, 
+        {id: 57 ,categoria: 'lacteos', nombre:'Manteca',precio:350,imagen:src="img/manteca.png"}, 
+        {id: 58 ,categoria: 'lacteos', nombre:'Yogur',precio:410,imagen:src="img/yogurisimo.png"}, 
+        {id: 59 ,categoria: 'lacteos', nombre:'Ser',precio:100,imagen:src="img/yogurSer.png"},
 
         //PRODUCTOS TECNOLOGIA
-        {id: 42 ,nombre:'Iphone',precio:2450,imagen: src="img/Iphone.png"},
-        {id: 43 ,nombre:'LG',precio:4500,imagen:src="img/LG.png"}, 
-        {id: 44 ,nombre:'Mouse',precio:190,imagen:src="img/mouseGenius.png"}, 
-        {id: 45 ,nombre:'Notebook',precio:2790,imagen:src="img/notebook.png"}, 
-        {id: 46 ,nombre:'Samsung',precio:2290,imagen:src="img/samsungZFlip.png"}, 
-        {id: 47 ,nombre:'Xiaomi',precio:9800,imagen:src="img/xiaomi.png"},
-    
-    
+        {id: 42 , categoria: 'tecnologia', nombre:'Iphone',precio:2450,imagen: src="img/Iphone.png"},
+        {id: 43 ,categoria: 'tecnologia', nombre:'LG',precio:4500,imagen:src="img/LG.png"}, 
+        {id: 44 ,categoria: 'tecnologia', nombre:'Mouse',precio:190,imagen:src="img/mouseGenius.png"}, 
+        {id: 45 ,categoria: 'tecnologia', nombre:'Notebook',precio:2790,imagen:src="img/notebook.png"}, 
+        {id: 46 ,categoria: 'tecnologia',nombre:'Samsung',precio:2290,imagen:src="img/samsungZFlip.png"}, 
+        {id: 47 ,categoria: 'tecnologia', nombre:'Xiaomi',precio:9800,imagen:src="img/xiaomi.png"},
     ];
-
 
             let carrito = [];
             const divisa = ' $.-';
@@ -229,6 +226,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Eventos
             DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+
+
+
+            // buscador 
+            var buscador = document.addEventListener("keyup", buscar);
+            var areaBuscador = document.getElementById("areaBuscador");
+            var buscada = areaBuscador.value ;
+
+            function buscar(){
+            
+            if ( baseDeDatos.filter(buscado=> buscado.categoria == buscada)){
+                
+            }
+           }
 
             // Inicio
             cargarCarritoDeLocalStorage();

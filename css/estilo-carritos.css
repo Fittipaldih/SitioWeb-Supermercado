@@ -3,11 +3,21 @@
 }
 
 .listaProductosEnCarrito{
-    width: 90%;
-
+  display: flex;  
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 97%;
+  border-radius: 5px;
 }
 
 .listaProductosEnCarrito p{
   font-size: 20px;
   text-align: center;
+}
+
+
+
+#botones{
+  display: flex;
+  justify-content: space-between;
 }

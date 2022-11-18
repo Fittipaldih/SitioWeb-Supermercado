@@ -47,17 +47,7 @@
       
             <!-- Elementos generados a partir del JSON -->
             <div id="items"></div>
-            <article class="listaProductosEnCarrito">
-                <p >Productos agregados al carrito: </p>
-                <!-- Elementos del carrito -->
-                <ul id="carrito" class="list-group"></ul>
-               
-                <!-- Precio total -->
-                <p class="TotalCarrito">Total: <span id="total"> </span> $.-</p>
-
-                <button id="boton-vaciar" class="botonVaciar">Vaciar carrito</button>
-                <button id="comprar">Realizar compra </button>
-            </article>
+            
     
     <div class="contenedor-botones-categorias">
         <a href="categorias.html"> <input type="submit" name="volver-a-categorias" class="volver-a-categorias" value="< Volver a Categorias"></a>
@@ -65,6 +55,17 @@
     </div>
     
 </section>
+<aside class="listaProductosEnCarrito">
+    <p >Productos agregados al carrito: </p>
+    <!-- Elementos del carrito -->
+    <ul id="carrito" class="list-group"></ul>
+   
+    <!-- Precio total -->
+    <p class="TotalCarrito">Total: <span id="total"> </span> $.-</p>
+
+    <button id="boton-vaciar" class="botonVaciar">Vaciar carrito</button>
+    <button id="comprar">Realizar compra </button>
+</aside>
 
 </main>
 
@@ -95,7 +96,8 @@
         </a>
     </div>
     </footer>
-    <script src="js/almacen.js"></script>
+   
     <script src="js/carritoGeneral.js"></script>
+    <script src="js/buscar.js"></script>
 </body>
 </html>
