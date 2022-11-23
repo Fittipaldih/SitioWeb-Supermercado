@@ -3,7 +3,7 @@ $(".body-slider").slick({
     slidesToShow: 5,
     slidesToScroll: 3,
     autoplay: true, 
-    autoplaySpeed: 2500,
+    autoplaySpeed: 1500,
     responsive: [
         {
           breakpoint: 1024,

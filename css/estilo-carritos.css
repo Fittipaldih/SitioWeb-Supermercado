@@ -1,13 +1,17 @@
 #items{
-    display: none
+    display: none;
+}
+
+.Productos{
+  width: 1000px;
+  min-height: 440px;
 }
 
 .listaProductosEnCarrito{
-  display: flex;  
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 92%;
+  display: inline-block;
+  height:fit-content;
   border-radius: 5px;
+  background-color: aliceblue;
 }
 
 .listaProductosEnCarrito p{
@@ -15,9 +19,8 @@
   text-align: center;
 }
 
-
-
 #botones{
   display: flex;
   justify-content: space-between;
 }
+

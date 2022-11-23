@@ -189,8 +189,8 @@ nav a:hover {
 
 /* CORRESPONDE TANTO AL MAIN COMO A HTML CATEGORIAS > AL CLICKEAR EN ALGUNA CAT */
 .imagenProducto {
-    max-width: 142px;
-    max-height: 142px;
+    width: 162px;
+    height: 162px;
     display: inline-block;
     box-shadow: 2px 2px #eee;
     border: 1px solid #eef;

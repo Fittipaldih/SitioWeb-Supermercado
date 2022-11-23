@@ -39,17 +39,16 @@
     </div>
 </header>
     <main>
-     <div class="ContenedorProductos">
-     <section class="Productos">
+   
+     <section class="Productos" >
     
      <h2>Productos de Almacén</h2>
     
-      
+     
             <!-- Elementos generados a partir del JSON -->
-            <div id="items"></div>
+            <div id="items" ></div>
             
-    
-    <div class="contenedor-botones-categorias">
+            <div class="contenedor-botones-categorias">
         <a href="categorias.html"> <input type="submit" name="volver-a-categorias" class="volver-a-categorias" value="< Volver a Categorias"></a>
         <a href="bebidas2.0.html">  <input type="submit" name="siguiente-categoria" class="siguiente-categoria" value="Siguiente Categoria >"> </a>
     </div>
@@ -58,13 +57,16 @@
 <aside class="listaProductosEnCarrito">
     <p >Productos agregados al carrito: </p>
     <!-- Elementos del carrito -->
-    <ul id="carrito" class="list-group"></ul>
+    <ul id="carrito"></ul>
    
     <!-- Precio total -->
     <p class="TotalCarrito">Total: <span id="total"> </span> $.-</p>
 
-    <button id="boton-vaciar" class="botonVaciar">Vaciar carrito</button>
-    <button id="comprar">Realizar compra </button>
+    <div id="botonesVaciarComprar"> <button class="botonVaciar">Vaciar carrito</button>
+        <a href="carrito2.0.html">
+            <button id="comprar">Realizar compra </button>
+        </a>
+    </div>
 </aside>
 
 </main>
@@ -96,8 +98,8 @@
         </a>
     </div>
     </footer>
-   
     <script src="js/carritoGeneral.js"></script>
-    <script src="js/buscar.js"></script>
+    <script src="js/almacen.js"></script>
+    
 </body>
 </html>
