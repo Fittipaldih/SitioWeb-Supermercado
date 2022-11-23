@@ -39,6 +39,7 @@ main div{
     flex-direction: column;
     margin: 40px;
     width: 50%;
+    height: 450px;
     background-color: whitesmoke;
     padding: 70px;
     border-radius: 10px;
@@ -76,6 +77,7 @@ main div{
     padding: 70px;
     border-radius: 10px;
     border: #313030 solid 1px;
+    height: 450px;
 }
 
 .contacto_datos h2 {
