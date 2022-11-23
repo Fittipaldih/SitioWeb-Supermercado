@@ -1,8 +1,3 @@
-
-let hola = JSON.parse(localStorage.getItem("MiUsuario"))
-
-console.log(hola)
-
 const ventanaIniciarSesion = document.querySelector(".iniciarSesion")
 const boton = document.querySelector("#login");
 
@@ -24,6 +19,10 @@ const abrirRegistrarse = () => {
 const cerrarRegistrarse = () => {
     ventanaRegistrarse.close();
 }
+
+
+
+/* VALIDACION DE FORMULARIO AL CREAR UN USUARIO (BOTON LOGIN)*/
 
 const formRegistrarse = document.querySelector("#formulario-registrarse");
 
@@ -79,7 +78,7 @@ localStorage.setItem("MiUsuario",MiUsuario)
 }
 
 
-
+/* VALIDACION DE QUE EL USUARIO EXISTA AL INICIAR SESION */
 const formIniciarSesion = document.querySelector(".formulario-iniciar-sesion");
 let nombreUsuarioIngresado = document.getElementById("nombre-usuario");
 let contraseniaIngresada = document.getElementById("contraseña");
