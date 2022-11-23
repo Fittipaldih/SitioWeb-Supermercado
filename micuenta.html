@@ -52,10 +52,10 @@
         <dialog class="ventanaNuevaDireccion">
             <div class="contenedor-posicion">
                 <h2>Nueva dirección</h2>
-                <form class="contenido" action="#" id="formulario-direccion" onsubmit="validarDireccion()">
+                <form class="contenido" action="#" id="formulario-direccion">
                     <div class="container-input-label">
                         <label for="Alias">Alias:</label>
-                        <input type="text" name="Alias" placeholder="Alias" autofocus required>
+                        <input id="aliasDireccion" type="text" name="Alias" placeholder="Alias" autofocus >
                     </div>
                     <div class="container-input-label">
                         <label for="">Provincia:</label>
@@ -83,11 +83,11 @@
                     </div>
                     <div class="container-input-label">
                         <label for="Dirección">Dirección:</label>
-                        <input type="text" name="Direccion" placeholder="Dirección" required>
+                        <input id="direccionDireccion" type="text" name="Direccion" placeholder="Dirección" >
                     </div>
                     <div class="container-input-label">
                         <label for="Telefono">Télefono:</label>
-                        <input type="number" name="Telefono" placeholder="Tel" id="input-number:" required>
+                        <input type="number" name="Telefono" placeholder="Tel" id="input-number:" >
                     </div>
                     <div class="container-input-label">
                         <label for="Piso">Piso:</label>
@@ -173,10 +173,15 @@
                     <div>
                         <h3>Dirección</h3>
                     </div>
-                    <div>
+                    
+
+
+                    <div id="direccionesAlias">
                         <p>Mi depto</p>
                     </div>
-                    <div>
+
+
+                    <div id="direccionesDireccion">
                         <p>xxxxxxxxxxxxxxx </p>
                     </div>
                     <div>

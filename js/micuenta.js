@@ -21,28 +21,23 @@ const cerrarTarjeta = () => {
 
 
 
-
-
 // Validar formulario nueva  dirección
 
-const form=document.getElementById("formulario-direccion");
+const form=document.querySelector("#formulario-direccion");
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
     validarDireccion();
 });
 
+const alias = document.getElementById("aliasDireccion");
+const direccion=document.getElementById("direccionDireccion");
+
 function validarDireccion(){
     let mensajesError='';
     let error=false;
-    
-    const alias = document.getElementsByName("Alias");
-    const direccion=document.getElementsByName("Direccion");
-    const provincia = document.getElementById("selectProvincia")
-    const localidad= document.getElementById("selectLocalidad");
-    const telefono = document.getElementById("Telefono");
-    const piso = document.getElementsByName("Piso");
-    const departamento = document.getElementsByName("Dto");
+    let provincia = document.getElementById("selectProvincia")
+    let localidad= document.getElementById("selectLocalidad");
     
     if(alias.value==""){
         error=true;
@@ -60,18 +55,44 @@ function validarDireccion(){
         error=true;
         mensajesError+="<p>Debe ingresar una direccion</p>"
     }
-    /*if(telefono.value==""){
-        error=true;
-        mensajesError+="<p></p>"
-    }
-    Es necesario validar el ingreso de algun telefono??? lo mismo con piso y departamento
-    */
+ 
     if(error){
         document.querySelector("#erroresAgregarDireccion").innerHTML=mensajesError;
     }else{
+        guardarDireccion()
         form.submit();
     }
 }
+
+/* guardamos la direccion en un JSON  */
+function guardarDireccion(){
+
+const laDireccion =[
+    {
+    "alias": alias.value,
+    "direccion": direccion.value,    
+    }
+    ]
+let direccionEnJSON = JSON.stringify(laDireccion);
+localStorage.setItem("miDireccion", direccionEnJSON)
+    escribirDireccion()
+}
+
+/* escribimos la direccion en el HTML  */
+
+function escribirDireccion(){
+/*APARENTEMENTE NO SE GUARDO MI DIRECCION EN LOCAL STORAGE ???? NO LO RECONOCE..  */
+    direccione = JSON.parse(localStorage.getItem("miDireccion"))
+    direccione.forEach(direcciones => {
+    direcciones.alias
+    direcciones.direccion
+
+document.querySelector("#direccionesAlias").innerHTML=alias
+document.querySelector("#direccionesDireccion").innerHTML=direccion
+})
+
+
+
 
 // formulario metodos de pago
 
@@ -98,9 +119,9 @@ function validarTarjeta() {
         sumaValores += numero
     }
     console.log(sumaValores);
-console.log(arrayTarjeta.length);
+    console.log(arrayTarjeta.length);
     if (arrayTarjeta.length != 10) {
-        error = true;
+        error = true;   
         mensajesError += " <p>Cantidad de caracteres incorrectos</p>"
     } else {
 
@@ -116,7 +137,4 @@ console.log(arrayTarjeta.length);
     }
 }
 
-
-
-
-
+}

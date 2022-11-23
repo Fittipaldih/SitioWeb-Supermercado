@@ -58,6 +58,9 @@ function contraseñasIguales(){
         formRegistrarse.submit();
     }
 }
+
+
+
 const email = document.querySelector("#registrarseEmail");
 const nombre = document.querySelector("#nombre")
 const apellido = document.getElementById("apellido");
