@@ -330,11 +330,19 @@ input[id="3"]:checked~.pagina .item-pagina[for="3"] {
 }
 #btn-cancelar{
     padding:5px 10px;
+    cursor: pointer;
 }
 #btn-guardar{
     padding: 5px 10px;
+    cursor: pointer;
 }
-#ErroresAlRegistrarse{
+#ErroresAlRegistrarse, #ErroresAlIniciarSesion{
     color: red;
     font-size: large;
+}
+
+#submito{
+    cursor: pointer;
+    padding:5px 10px;
+    margin: 10px;
 }

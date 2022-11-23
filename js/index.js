@@ -1,4 +1,8 @@
 
+let hola = JSON.parse(localStorage.getItem("MiUsuario"))
+
+console.log(hola)
+
 const ventanaIniciarSesion = document.querySelector(".iniciarSesion")
 const boton = document.querySelector("#login");
 
@@ -28,26 +32,25 @@ formRegistrarse.addEventListener("submit", (e)=> {
     contraseñasIguales();
 })
 
+
 function contraseñasIguales(){
 
     let contraseña1 = document.getElementById("contraseña1");
     let contraseña2 = document.getElementById("contraseña2");
     let email = document.getElementById("registrarseEmail");
     
-
-
     let error = false;
     let mensajeDeError = "";
 
     if(email.value.length<5){
         error = true;
-        mensajeDeError+= "email invalido" 
+        mensajeDeError+= "Email invalido" 
     }    
     
     if(contraseña1.value!==contraseña2.value){
         error=true;
         
-        mensajeDeError += "<p>Las contraseña no son iguales</p>"
+        mensajeDeError += "<p>Las contraseñas no son iguales</p>"
     }
     if(error){
         document.querySelector("#ErroresAlRegistrarse").innerHTML=mensajeDeError;
@@ -72,4 +75,47 @@ const usuario =[
 ]
 let MiUsuario = JSON.stringify(usuario);
 localStorage.setItem("MiUsuario",MiUsuario)
+
 }
+
+
+
+const formIniciarSesion = document.querySelector(".formulario-iniciar-sesion");
+let nombreUsuarioIngresado = document.getElementById("nombre-usuario");
+let contraseniaIngresada = document.getElementById("contraseña");
+
+
+    formIniciarSesion.addEventListener("submit", (e) => {
+        e.preventDefault();
+        validarUsuario();
+    })
+
+function validarUsuario(){
+    let errores = false;
+    let mensajeDeErrores = " ";
+   usuarioValidar = JSON.parse(localStorage.getItem("MiUsuario"))
+
+   usuarioValidar.forEach(usuario => {
+        usuario.nombre
+        usuario.contraseña1
+
+        if (usuario.nombre==nombreUsuarioIngresado.value && usuario.contraseña1==contraseniaIngresada.value){
+            formIniciarSesion.submit()
+            cerrarPopUp()
+       }
+       if (usuario.nombre!=nombreUsuarioIngresado.value){
+        errores= true
+        mensajeDeErrores+="El nombre de usuario no existe "
+       } 
+       if (usuario.contrasenia1!=contraseniaIngresada.value){
+        errores= true
+        mensajeDeErrores+="<p>La contraseña es incorrecta </p>"
+       } 
+       
+       if (errores){
+        document.querySelector("#ErroresAlIniciarSesion").innerHTML=mensajeDeErrores;
+       }
+   })
+  
+}
+

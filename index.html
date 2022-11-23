@@ -57,7 +57,7 @@
             <form id="formulario-registrarse" method="post">
 
                 <label for="email">Email</label>
-                <input type="text" name="email" placeholder="Ingrese email" id="registrarseEmail">
+                <input autofocus type="text" name="email" placeholder="Ingrese email" id="registrarseEmail">
 
                 <label for="Nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre"placeholder="Ingrese usuario" required>
@@ -87,15 +87,16 @@
             <h2>Iniciar sesion</h2>
             <form class="formulario-iniciar-sesion">
                 
-                <label for="nombre-usuario">Usuario:</label>
-                <input type="text" class="campo-usuario", id="nombre-usurio" name="nombre">
+                <label for="nombre-usuario">Nombre usuario:</label>
+                <input autofocus type="text" class="campo-usuario", id="nombre-usuario" name="nombre">
                 
                 <label for="contraseña">Contraseña:</label>
-                <input type="text" class="campo-password" id="contraseña" name="contraseña">
+                <input type="password" class="campo-password" id="contraseña" name="contraseña">
                 <a href="#" id="olvidaste-contraseña">¿Olvidaste tu contraseña?</a>
                 
-                <button id="submit">Login</button>
+                <button type="submit" id="submito">Ingresar</button>
                 <p>¿No tenés cuenta? <a id="Registrarse"href="#" onclick="abrirRegistrarse(), cerrarPopUp()">Registrate</a></p>
+                <div id="ErroresAlIniciarSesion"></div>
             </form>
         </dialog>
 

@@ -184,8 +184,8 @@ const productosTecnologia = baseDeDatos.filter(function(tecnologia){
                 carrito = [];
                 // Renderizamos los cambios
                 renderizarCarrito();
-                // Borra LocalStorage
-                localStorage.clear();
+                // Borra carrito del LocalStorage
+                localStorage.removeItem("carrito");
 
             }
 

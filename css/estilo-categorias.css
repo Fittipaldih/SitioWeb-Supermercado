@@ -161,7 +161,7 @@ main{
     flex-wrap: wrap;
     flex-direction: column;
     padding: 20px;
-    margin: 35px 125px;
+    margin: 35px 0px 35px 150px;
     width: 55%;
     background-image: url(../img/fondo.png);
     border-radius: 10px;
