@@ -82,7 +82,7 @@ localStorage.setItem("miDireccion", direccionEnJSON)
 
 function escribirDireccion(){
 /*APARENTEMENTE NO SE GUARDO MI DIRECCION EN LOCAL STORAGE ???? NO LO RECONOCE..  */
-    direccione = JSON.parse(localStorage.getItem("miDireccion"))
+    var direccione = JSON.parse(localStorage.getItem("miDireccion"))
     direccione.forEach(direcciones => {
     direcciones.alias
     direcciones.direccion

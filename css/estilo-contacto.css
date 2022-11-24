@@ -92,6 +92,7 @@ main div{
 #submit {
     margin: 10px;
     padding: 5px 7px;
+    cursor: pointer;
 }
 
 

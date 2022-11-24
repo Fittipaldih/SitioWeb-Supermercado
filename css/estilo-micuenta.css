@@ -197,4 +197,9 @@
 
 #boton-agregar-metodos-pago{
     padding:3px 8px;
+    cursor: pointer;
+}
+
+.btn{
+    cursor: pointer;
 }
